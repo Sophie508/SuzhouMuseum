@@ -11,7 +11,6 @@ import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger, Dialog
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 import { SafeImage } from "@/components/SafeImage"
 import { Artifact, getArtifactsByZodiac } from "@/lib/data-service"
-import { toggleFavoriteArtifact, getFavoriteArtifactIds } from "@/lib/recommendation-service"
 import { ZODIAC_SIGNS } from "@/lib/user-model"
 
 export default function ZodiacRecommendationPage() {
@@ -19,7 +18,7 @@ export default function ZodiacRecommendationPage() {
   const searchParams = useSearchParams()
   const [artifacts, setArtifacts] = useState<Artifact[]>([])
   const [loading, setLoading] = useState(false)
-  const [selectedZodiac, setSelectedZodiac] = useState<string>(searchParams.get("sign") || "")
+  const [selectedZodiac, setSelectedZodiac] = useState<string>("")
   const [favorites, setFavorites] = useState<string[]>([])
   const [selectedArtifact, setSelectedArtifact] = useState<Artifact | null>(null)
   const [detailDialogOpen, setDetailDialogOpen] = useState(false)
@@ -39,6 +38,22 @@ export default function ZodiacRecommendationPage() {
     dog: "🐕",
     pig: "🐖"
   }
+  
+  // 初始化状态，现在移到useEffect中，确保只在客户端执行
+  useEffect(() => {
+    const zodiacFromUrl = searchParams?.get("sign") || "";
+    setSelectedZodiac(zodiacFromUrl);
+    
+    // 在客户端加载收藏的藏品
+    try {
+      const savedFavorites = localStorage.getItem('favoriteArtifacts');
+      if (savedFavorites) {
+        setFavorites(JSON.parse(savedFavorites));
+      }
+    } catch (error) {
+      console.error("Error loading favorites:", error);
+    }
+  }, [searchParams]);
   
   // 获取当前生肖标签
   const getCurrentZodiacName = () => {
@@ -70,10 +85,6 @@ export default function ZodiacRecommendationPage() {
     if (selectedZodiac) {
       loadZodiacArtifacts()
     }
-    
-    // 加载收藏的藏品
-    const favs = getFavoriteArtifactIds()
-    setFavorites(favs)
   }, [selectedZodiac])
   
   // 处理生肖选择变化
@@ -81,15 +92,27 @@ export default function ZodiacRecommendationPage() {
     setSelectedZodiac(value)
     
     // 更新URL参数但不导航
-    const params = new URLSearchParams(searchParams.toString())
-    params.set("sign", value)
-    router.push(`/during-visit/zodiac?${params.toString()}`, { scroll: false })
+    if (searchParams) {
+      const params = new URLSearchParams(searchParams.toString())
+      params.set("sign", value)
+      router.push(`/during-visit/zodiac?${params.toString()}`, { scroll: false })
+    }
   }
   
   // 处理藏品收藏
   const handleFavoriteToggle = (artifactId: string) => {
-    const newFavorites = toggleFavoriteArtifact(artifactId)
-    setFavorites(newFavorites)
+    const newFavorites = favorites.includes(artifactId)
+      ? favorites.filter(id => id !== artifactId)
+      : [...favorites, artifactId];
+    
+    setFavorites(newFavorites);
+    
+    // 保存到localStorage
+    try {
+      localStorage.setItem('favoriteArtifacts', JSON.stringify(newFavorites));
+    } catch (error) {
+      console.error("Error saving favorites:", error);
+    }
   }
   
   // 查看藏品详情
@@ -111,7 +134,7 @@ export default function ZodiacRecommendationPage() {
     }
     
     // 回退到任何可用的图片路径
-    return artifact.localImage || artifact.image || '/placeholder-image.jpg';
+    return artifact.localImage || artifact.image || '/placeholder.jpg';
   }
   
   return (

@@ -5,12 +5,15 @@ import { getCurrentUserId, getUserById, updateUserSelectedArtifacts, updateUserF
 const PRE_VISIT_SELECTED_KEY = 'preVisitSelectedArtifacts';
 const FAVORITE_ARTIFACTS_KEY = 'favoriteArtifacts';
 
+// 检查是否为浏览器环境
+const isBrowser = typeof window !== 'undefined';
+
 /**
  * 根据用户兴趣标签获取推荐藏品
  */
 export async function getRecommendedArtifacts(count: number = 3): Promise<Artifact[]> {
   // 获取当前用户
-  const userId = getCurrentUserId();
+  const userId = isBrowser ? getCurrentUserId() : null;
   const user = userId ? getUserById(userId) : null;
   
   // 如果有用户且有偏好设置，使用个性化推荐
@@ -28,7 +31,7 @@ export async function getRecommendedArtifacts(count: number = 3): Promise<Artifa
   
   // 否则随机推荐
   const artifacts = await loadArtifacts();
-  return shuffleArray(artifacts).slice(0, count);
+  return shuffleArray(artifacts.artifacts).slice(0, count);
 }
 
 /**
@@ -45,7 +48,7 @@ export async function getZodiacRecommendedArtifacts(zodiacSign: string, count: n
   // 如果相关藏品不足，补充随机藏品
   const allArtifacts = await loadArtifacts();
   const randomArtifacts = shuffleArray(
-    allArtifacts.filter(a => !zodiacArtifacts.some(za => za.id === a.id))
+    allArtifacts.artifacts.filter((a: Artifact) => !zodiacArtifacts.some(za => za.id === a.id))
   ).slice(0, count - zodiacArtifacts.length);
   
   return [...zodiacArtifacts, ...randomArtifacts];
@@ -82,6 +85,9 @@ export const getMbtiRecommendedArtifacts = async (mbtiType: string, count: numbe
  * 获取参观前选择的藏品IDs（新版优先使用用户模型，如无则使用旧方式）
  */
 export function getPreVisitSelectedIds(): string[] {
+  // 服务器端返回空数组
+  if (!isBrowser) return [];
+  
   // 优先使用用户模型
   const userId = getCurrentUserId();
   const user = userId ? getUserById(userId) : null;
@@ -91,8 +97,6 @@ export function getPreVisitSelectedIds(): string[] {
   }
   
   // 旧方式兼容
-  if (typeof window === 'undefined') return [];
-  
   const saved = localStorage.getItem(PRE_VISIT_SELECTED_KEY);
   return saved ? JSON.parse(saved) : [];
 }
@@ -101,6 +105,9 @@ export function getPreVisitSelectedIds(): string[] {
  * 设置参观前选择的藏品IDs（新版优先使用用户模型，同时兼容旧方式）
  */
 export function setPreVisitSelectedIds(ids: string[]): void {
+  // 服务器端不执行任何操作
+  if (!isBrowser) return;
+  
   // 优先使用用户模型
   const userId = getCurrentUserId();
   if (userId) {
@@ -108,7 +115,6 @@ export function setPreVisitSelectedIds(ids: string[]): void {
   }
   
   // 旧方式兼容
-  if (typeof window === 'undefined') return;
   localStorage.setItem(PRE_VISIT_SELECTED_KEY, JSON.stringify(ids));
 }
 
@@ -116,6 +122,9 @@ export function setPreVisitSelectedIds(ids: string[]): void {
  * 获取收藏的藏品IDs（新版优先使用用户模型，如无则使用旧方式）
  */
 export function getFavoriteArtifactIds(): string[] {
+  // 服务器端返回空数组
+  if (!isBrowser) return [];
+  
   // 优先使用用户模型
   const userId = getCurrentUserId();
   const user = userId ? getUserById(userId) : null;
@@ -125,8 +134,6 @@ export function getFavoriteArtifactIds(): string[] {
   }
   
   // 旧方式兼容
-  if (typeof window === 'undefined') return [];
-  
   const saved = localStorage.getItem(FAVORITE_ARTIFACTS_KEY);
   return saved ? JSON.parse(saved) : [];
 }
@@ -135,6 +142,9 @@ export function getFavoriteArtifactIds(): string[] {
  * 设置收藏的藏品IDs（新版优先使用用户模型，同时兼容旧方式）
  */
 export function setFavoriteArtifactIds(ids: string[]): void {
+  // 服务器端不执行任何操作
+  if (!isBrowser) return;
+  
   // 优先使用用户模型
   const userId = getCurrentUserId();
   if (userId) {
@@ -142,7 +152,6 @@ export function setFavoriteArtifactIds(ids: string[]): void {
   }
   
   // 旧方式兼容
-  if (typeof window === 'undefined') return;
   localStorage.setItem(FAVORITE_ARTIFACTS_KEY, JSON.stringify(ids));
 }
 
@@ -150,6 +159,9 @@ export function setFavoriteArtifactIds(ids: string[]): void {
  * 切换藏品的收藏状态
  */
 export function toggleFavoriteArtifact(id: string): string[] {
+  // 服务器端返回空数组
+  if (!isBrowser) return [];
+  
   const favorites = getFavoriteArtifactIds();
   
   const newFavorites = favorites.includes(id)

@@ -11,7 +11,6 @@ import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger, Dialog
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 import { SafeImage } from "@/components/SafeImage"
 import { Artifact } from "@/lib/data-service"
-import { toggleFavoriteArtifact, getFavoriteArtifactIds, getMbtiRecommendedArtifacts } from "@/lib/recommendation-service"
 import { MBTI_TYPES } from "@/lib/user-model"
 import { MbtiSelector } from "@/components/MbtiSelector"
 
@@ -20,11 +19,27 @@ export default function MbtiRecommendationPage() {
   const searchParams = useSearchParams()
   const [artifacts, setArtifacts] = useState<Artifact[]>([])
   const [loading, setLoading] = useState(false)
-  const [selectedMbti, setSelectedMbti] = useState<string>(searchParams.get("type") || "")
+  const [selectedMbti, setSelectedMbti] = useState<string>("")
   const [favorites, setFavorites] = useState<string[]>([])
   const [selectedArtifact, setSelectedArtifact] = useState<Artifact | null>(null)
   const [detailDialogOpen, setDetailDialogOpen] = useState(false)
   const [hasSimilarUsers, setHasSimilarUsers] = useState(false)
+  
+  // 初始化状态，现在移到useEffect中，确保只在客户端执行
+  useEffect(() => {
+    const mbtiFromUrl = searchParams?.get("type") || "";
+    setSelectedMbti(mbtiFromUrl);
+    
+    // 在客户端加载收藏的藏品
+    try {
+      const savedFavorites = localStorage.getItem('favoriteArtifacts');
+      if (savedFavorites) {
+        setFavorites(JSON.parse(savedFavorites));
+      }
+    } catch (error) {
+      console.error("Error loading favorites:", error);
+    }
+  }, [searchParams]);
   
   // 获取当前MBTI类型名称
   const getCurrentMbtiName = () => {
@@ -66,10 +81,6 @@ export default function MbtiRecommendationPage() {
     if (selectedMbti) {
       loadMbtiArtifacts()
     }
-    
-    // 加载收藏的藏品
-    const favs = getFavoriteArtifactIds()
-    setFavorites(favs)
   }, [selectedMbti])
   
   // 处理MBTI选择变化
@@ -77,15 +88,27 @@ export default function MbtiRecommendationPage() {
     setSelectedMbti(value)
     
     // 更新URL参数但不导航
-    const params = new URLSearchParams(searchParams.toString())
-    params.set("type", value)
-    router.push(`/during-visit/mbti?${params.toString()}`, { scroll: false })
+    if (searchParams) {
+      const params = new URLSearchParams(searchParams.toString())
+      params.set("type", value)
+      router.push(`/during-visit/mbti?${params.toString()}`, { scroll: false })
+    }
   }
   
   // 处理藏品收藏
   const handleFavoriteToggle = (artifactId: string) => {
-    const newFavorites = toggleFavoriteArtifact(artifactId)
-    setFavorites(newFavorites)
+    const newFavorites = favorites.includes(artifactId)
+      ? favorites.filter(id => id !== artifactId)
+      : [...favorites, artifactId];
+    
+    setFavorites(newFavorites);
+    
+    // 保存到localStorage
+    try {
+      localStorage.setItem('favoriteArtifacts', JSON.stringify(newFavorites));
+    } catch (error) {
+      console.error("Error saving favorites:", error);
+    }
   }
   
   // 查看藏品详情
@@ -107,7 +130,7 @@ export default function MbtiRecommendationPage() {
     }
     
     // 回退到任何可用的图片路径
-    return artifact.localImage || artifact.image || '/placeholder-image.jpg';
+    return artifact.localImage || artifact.image || '/placeholder.jpg';
   }
   
   // 用于修复图片路径的辅助函数

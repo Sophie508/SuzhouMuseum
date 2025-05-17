@@ -5,11 +5,14 @@ import { v4 as uuidv4 } from 'uuid';
 const USERS_KEY = 'museum_users';
 const CURRENT_USER_KEY = 'museum_current_user';
 
+// 检查是否为浏览器环境
+const isBrowser = typeof window !== 'undefined';
+
 /**
  * 获取所有用户
  */
 export function getAllUsers(): User[] {
-  if (typeof window === 'undefined') return [];
+  if (!isBrowser) return [];
   
   const saved = localStorage.getItem(USERS_KEY);
   return saved ? JSON.parse(saved) : [];
@@ -19,7 +22,7 @@ export function getAllUsers(): User[] {
  * 获取当前用户ID
  */
 export function getCurrentUserId(): string | null {
-  if (typeof window === 'undefined') return null;
+  if (!isBrowser) return null;
   
   return localStorage.getItem(CURRENT_USER_KEY);
 }
@@ -28,7 +31,7 @@ export function getCurrentUserId(): string | null {
  * 设置当前用户ID
  */
 export function setCurrentUserId(userId: string): void {
-  if (typeof window === 'undefined') return;
+  if (!isBrowser) return;
   
   localStorage.setItem(CURRENT_USER_KEY, userId);
 }
@@ -54,6 +57,9 @@ export function getUserByNickname(nickname: string): User | null {
  * 返回创建的用户或null（如果昵称已存在）
  */
 export function createUser(nickname: string): User | null {
+  // 服务器端渲染时不执行
+  if (!isBrowser) return null;
+  
   // 检查昵称是否已存在
   if (getUserByNickname(nickname)) {
     return null;
@@ -89,7 +95,10 @@ export function createUser(nickname: string): User | null {
 /**
  * 创建用户（确保昵称唯一，自动添加随机后缀）
  */
-export function createUserWithUniqueNickname(nickname: string): User {
+export function createUserWithUniqueNickname(nickname: string): User | null {
+  // 服务器端渲染时不执行
+  if (!isBrowser) return null;
+  
   let uniqueNickname = nickname;
   let counter = 1;
   
@@ -131,6 +140,9 @@ export function createUserWithUniqueNickname(nickname: string): User {
  * 更新用户偏好设置
  */
 export function updateUserPreferences(userId: string, preferences: Partial<UserPreference>): User | null {
+  // 服务器端渲染时不执行
+  if (!isBrowser) return null;
+  
   const users = getAllUsers();
   const userIndex = users.findIndex(user => user.id === userId);
   
@@ -153,6 +165,9 @@ export function updateUserPreferences(userId: string, preferences: Partial<UserP
  * 更新用户选择的藏品
  */
 export function updateUserSelectedArtifacts(userId: string, artifactIds: string[]): User | null {
+  // 服务器端渲染时不执行
+  if (!isBrowser) return null;
+  
   const users = getAllUsers();
   const userIndex = users.findIndex(user => user.id === userId);
   
@@ -172,6 +187,9 @@ export function updateUserSelectedArtifacts(userId: string, artifactIds: string[
  * 更新用户收藏的藏品
  */
 export function updateUserFavoriteArtifacts(userId: string, artifactIds: string[]): User | null {
+  // 服务器端渲染时不执行
+  if (!isBrowser) return null;
+  
   const users = getAllUsers();
   const userIndex = users.findIndex(user => user.id === userId);
   
@@ -191,6 +209,8 @@ export function updateUserFavoriteArtifacts(userId: string, artifactIds: string[
  * 获取具有相同MBTI的用户收藏的藏品
  */
 export function getSimilarMbtiFavorites(mbtiType: string): string[] {
+  if (!isBrowser) return [];
+  
   const users = getAllUsers();
   const similarUsers = users.filter(user => 
     user.preferences.mbtiType === mbtiType
@@ -205,6 +225,8 @@ export function getSimilarMbtiFavorites(mbtiType: string): string[] {
  * 获取具有相同生肖的用户收藏的藏品
  */
 export function getSimilarZodiacFavorites(zodiacSign: string): string[] {
+  if (!isBrowser) return [];
+  
   const users = getAllUsers();
   const similarUsers = users.filter(user => 
     user.preferences.zodiacSign === zodiacSign
@@ -219,6 +241,8 @@ export function getSimilarZodiacFavorites(zodiacSign: string): string[] {
  * 更新用户参观总结
  */
 export function updateUserVisitSummary(userId: string, summary: string): User | null {
+  if (!isBrowser) return null;
+  
   const users = getAllUsers();
   const userIndex = users.findIndex(user => user.id === userId);
   
@@ -238,7 +262,7 @@ export function updateUserVisitSummary(userId: string, summary: string): User | 
  * 保存用户列表到本地存储
  */
 function saveUsers(users: User[]): void {
-  if (typeof window === 'undefined') return;
+  if (!isBrowser) return;
   
   localStorage.setItem(USERS_KEY, JSON.stringify(users));
 } 
