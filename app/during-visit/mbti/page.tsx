@@ -1,6 +1,6 @@
 "use client"
 
-import { useState, useEffect } from "react"
+import { useState, useEffect, Suspense } from "react"
 import { useRouter, useSearchParams } from "next/navigation"
 import Link from "next/link"
 import Image from "next/image"
@@ -14,9 +14,14 @@ import { Artifact } from "@/lib/data-service"
 import { MBTI_TYPES } from "@/lib/user-model"
 import { MbtiSelector } from "@/components/MbtiSelector"
 
+// 搜索参数消费组件，用于包裹在Suspense中
+function SearchParamsConsumer({ children }: { children: (params: ReturnType<typeof useSearchParams>) => React.ReactNode }) {
+  const searchParams = useSearchParams();
+  return <>{children(searchParams)}</>;
+}
+
 export default function MbtiRecommendationPage() {
   const router = useRouter()
-  const searchParams = useSearchParams()
   const [artifacts, setArtifacts] = useState<Artifact[]>([])
   const [loading, setLoading] = useState(false)
   const [selectedMbti, setSelectedMbti] = useState<string>("")
@@ -25,21 +30,20 @@ export default function MbtiRecommendationPage() {
   const [detailDialogOpen, setDetailDialogOpen] = useState(false)
   const [hasSimilarUsers, setHasSimilarUsers] = useState(false)
   
-  // 初始化状态，现在移到useEffect中，确保只在客户端执行
+  // 初始化收藏数据（不依赖于searchParams）
   useEffect(() => {
-    const mbtiFromUrl = searchParams?.get("type") || "";
-    setSelectedMbti(mbtiFromUrl);
-    
     // 在客户端加载收藏的藏品
     try {
-      const savedFavorites = localStorage.getItem('favoriteArtifacts');
-      if (savedFavorites) {
-        setFavorites(JSON.parse(savedFavorites));
+      if (typeof window !== 'undefined') {
+        const savedFavorites = localStorage.getItem('favoriteArtifacts');
+        if (savedFavorites) {
+          setFavorites(JSON.parse(savedFavorites));
+        }
       }
     } catch (error) {
       console.error("Error loading favorites:", error);
     }
-  }, [searchParams]);
+  }, []);
   
   // 获取当前MBTI类型名称
   const getCurrentMbtiName = () => {
@@ -83,8 +87,8 @@ export default function MbtiRecommendationPage() {
     }
   }, [selectedMbti])
   
-  // 处理MBTI选择变化
-  const handleMbtiChange = (value: string) => {
+  // 处理MBTI选择变化 - 现在在SearchParamsConsumer内部处理
+  const handleMbtiChange = (value: string, searchParams?: ReturnType<typeof useSearchParams>) => {
     setSelectedMbti(value)
     
     // 更新URL参数但不导航
@@ -188,19 +192,38 @@ export default function MbtiRecommendationPage() {
             </div>
           </div>
           
-          {/* MBTI选择器 */}
+          {/* MBTI选择器 - 使用Suspense包裹SearchParamsConsumer */}
           <div className="mb-8 bg-white rounded-lg shadow-sm p-6">
             <h2 className="text-xl font-medium mb-4">选择您的MBTI类型查看相关藏品</h2>
-            <MbtiSelector
-              value={selectedMbti}
-              onChange={handleMbtiChange}
-            />
             
-            {selectedMbti && (
-              <div className="flex items-center gap-2 text-lg mt-6">
-                <span>{getCurrentMbtiName()}性格类型的推荐藏品</span>
-              </div>
-            )}
+            <Suspense fallback={<div className="p-4 text-center">加载中...</div>}>
+              <SearchParamsConsumer>
+                {(searchParams) => {
+                  // 从URL参数获取MBTI类型
+                  const mbtiFromUrl = searchParams?.get("type") || "";
+                  // 如果URL中有MBTI类型且与当前选择不同，则更新当前选择
+                  if (mbtiFromUrl && mbtiFromUrl !== selectedMbti) {
+                    // 使用setTimeout来避免在渲染期间setState
+                    setTimeout(() => setSelectedMbti(mbtiFromUrl), 0);
+                  }
+                  
+                  return (
+                    <>
+                      <MbtiSelector
+                        value={selectedMbti}
+                        onChange={(value) => handleMbtiChange(value, searchParams)}
+                      />
+                      
+                      {selectedMbti && (
+                        <div className="flex items-center gap-2 text-lg mt-6">
+                          <span>{getCurrentMbtiName()}性格类型的推荐藏品</span>
+                        </div>
+                      )}
+                    </>
+                  );
+                }}
+              </SearchParamsConsumer>
+            </Suspense>
           </div>
           
           {/* 藏品展示 */}

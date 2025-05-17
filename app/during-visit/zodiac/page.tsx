@@ -1,6 +1,6 @@
 "use client"
 
-import { useState, useEffect } from "react"
+import { useState, useEffect, Suspense } from "react"
 import { useRouter, useSearchParams } from "next/navigation"
 import Link from "next/link"
 import Image from "next/image"
@@ -13,9 +13,14 @@ import { SafeImage } from "@/components/SafeImage"
 import { Artifact, getArtifactsByZodiac } from "@/lib/data-service"
 import { ZODIAC_SIGNS } from "@/lib/user-model"
 
+// 搜索参数消费组件，用于包裹在Suspense中
+function SearchParamsConsumer({ children }: { children: (params: ReturnType<typeof useSearchParams>) => React.ReactNode }) {
+  const searchParams = useSearchParams();
+  return <>{children(searchParams)}</>;
+}
+
 export default function ZodiacRecommendationPage() {
   const router = useRouter()
-  const searchParams = useSearchParams()
   const [artifacts, setArtifacts] = useState<Artifact[]>([])
   const [loading, setLoading] = useState(false)
   const [selectedZodiac, setSelectedZodiac] = useState<string>("")
@@ -39,21 +44,20 @@ export default function ZodiacRecommendationPage() {
     pig: "🐖"
   }
   
-  // 初始化状态，现在移到useEffect中，确保只在客户端执行
+  // 初始化收藏数据（不依赖于searchParams）
   useEffect(() => {
-    const zodiacFromUrl = searchParams?.get("sign") || "";
-    setSelectedZodiac(zodiacFromUrl);
-    
     // 在客户端加载收藏的藏品
     try {
-      const savedFavorites = localStorage.getItem('favoriteArtifacts');
-      if (savedFavorites) {
-        setFavorites(JSON.parse(savedFavorites));
+      if (typeof window !== 'undefined') {
+        const savedFavorites = localStorage.getItem('favoriteArtifacts');
+        if (savedFavorites) {
+          setFavorites(JSON.parse(savedFavorites));
+        }
       }
     } catch (error) {
       console.error("Error loading favorites:", error);
     }
-  }, [searchParams]);
+  }, []);
   
   // 获取当前生肖标签
   const getCurrentZodiacName = () => {
@@ -88,7 +92,7 @@ export default function ZodiacRecommendationPage() {
   }, [selectedZodiac])
   
   // 处理生肖选择变化
-  const handleZodiacChange = (value: string) => {
+  const handleZodiacChange = (value: string, searchParams?: ReturnType<typeof useSearchParams>) => {
     setSelectedZodiac(value)
     
     // 更新URL参数但不导航
@@ -177,32 +181,49 @@ export default function ZodiacRecommendationPage() {
             </div>
           </div>
           
-          {/* 生肖选择器 */}
+          {/* 生肖选择器 - 使用Suspense包裹SearchParamsConsumer */}
           <div className="mb-8 bg-white rounded-lg shadow-sm p-6">
             <h2 className="text-xl font-medium mb-4">选择您的生肖查看相关藏品</h2>
-            <div className="flex items-center gap-4">
-              <Select value={selectedZodiac} onValueChange={handleZodiacChange}>
-                <SelectTrigger className="w-[180px]">
-                  <SelectValue placeholder="请选择生肖" />
-                </SelectTrigger>
-                <SelectContent>
-                  {ZODIAC_SIGNS.map((zodiac) => (
-                    <SelectItem key={zodiac.id} value={zodiac.id}>
-                      <span className="flex items-center gap-2">
-                        {zodiacIcons[zodiac.id]} {zodiac.name}
-                      </span>
-                    </SelectItem>
-                  ))}
-                </SelectContent>
-              </Select>
-              
-              {selectedZodiac && (
-                <div className="flex items-center gap-2 text-lg">
-                  <span className="text-2xl">{getCurrentZodiacIcon()}</span>
-                  <span>与{getCurrentZodiacName()}生肖相关的藏品</span>
-                </div>
-              )}
-            </div>
+            
+            <Suspense fallback={<div className="p-4 text-center">加载中...</div>}>
+              <SearchParamsConsumer>
+                {(searchParams) => {
+                  // 从URL参数获取生肖类型
+                  const zodiacFromUrl = searchParams?.get("sign") || "";
+                  // 如果URL中有生肖类型且与当前选择不同，则更新当前选择
+                  if (zodiacFromUrl && zodiacFromUrl !== selectedZodiac) {
+                    // 使用setTimeout来避免在渲染期间setState
+                    setTimeout(() => setSelectedZodiac(zodiacFromUrl), 0);
+                  }
+                  
+                  return (
+                    <div className="flex items-center gap-4">
+                      <Select value={selectedZodiac} onValueChange={(value) => handleZodiacChange(value, searchParams)}>
+                        <SelectTrigger className="w-[180px]">
+                          <SelectValue placeholder="请选择生肖" />
+                        </SelectTrigger>
+                        <SelectContent>
+                          {ZODIAC_SIGNS.map((zodiac) => (
+                            <SelectItem key={zodiac.id} value={zodiac.id}>
+                              <span className="flex items-center gap-2">
+                                {zodiacIcons[zodiac.id]} {zodiac.name}
+                              </span>
+                            </SelectItem>
+                          ))}
+                        </SelectContent>
+                      </Select>
+                      
+                      {selectedZodiac && (
+                        <div className="flex items-center gap-2 text-lg">
+                          <span className="text-2xl">{getCurrentZodiacIcon()}</span>
+                          <span>与{getCurrentZodiacName()}生肖相关的藏品</span>
+                        </div>
+                      )}
+                    </div>
+                  );
+                }}
+              </SearchParamsConsumer>
+            </Suspense>
           </div>
           
           {/* 藏品展示 */}
