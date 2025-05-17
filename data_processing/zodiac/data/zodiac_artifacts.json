@@ -1,0 +1,2078 @@
+{
+  "zodiacArtifacts": {
+    "rat": [
+      "297",
+      "698",
+      "407"
+    ],
+    "ox": [
+      "407",
+      "698",
+      "412",
+      "883"
+    ],
+    "tiger": [
+      "536",
+      "890",
+      "105",
+      "186",
+      "409",
+      "669",
+      "70",
+      "698",
+      "376",
+      "653",
+      "60",
+      "836",
+      "36",
+      "802",
+      "56",
+      "57",
+      "460",
+      "608",
+      "910",
+      "521",
+      "79"
+    ],
+    "rabbit": [
+      "240",
+      "407",
+      "53",
+      "698",
+      "671"
+    ],
+    "dragon": [
+      "85",
+      "82",
+      "276",
+      "236",
+      "635",
+      "908",
+      "871",
+      "596",
+      "504",
+      "636",
+      "553",
+      "263",
+      "357",
+      "522",
+      "803",
+      "509",
+      "47",
+      "876",
+      "253",
+      "929",
+      "445",
+      "826",
+      "645",
+      "653",
+      "672",
+      "60",
+      "104",
+      "675",
+      "410",
+      "851",
+      "719",
+      "616",
+      "242",
+      "572",
+      "702",
+      "868",
+      "431",
+      "323",
+      "207",
+      "344",
+      "83",
+      "87",
+      "668",
+      "303",
+      "843",
+      "84",
+      "43",
+      "836",
+      "252",
+      "458",
+      "812",
+      "861",
+      "932",
+      "894",
+      "869",
+      "81",
+      "408",
+      "489",
+      "639",
+      "891",
+      "846",
+      "53",
+      "800",
+      "503",
+      "333",
+      "449",
+      "863",
+      "910",
+      "220",
+      "911",
+      "917",
+      "671",
+      "928"
+    ],
+    "snake": [
+      "407",
+      "636",
+      "624"
+    ],
+    "horse": [
+      "90",
+      "657",
+      "407",
+      "439",
+      "217",
+      "396",
+      "672",
+      "830"
+    ],
+    "goat": [
+      "932",
+      "427",
+      "541",
+      "343",
+      "409",
+      "400",
+      "698"
+    ],
+    "monkey": [
+      "407",
+      "197",
+      "721"
+    ],
+    "rooster": [
+      "407",
+      "848",
+      "80",
+      "213",
+      "490"
+    ],
+    "dog": [
+      "407"
+    ],
+    "pig": [
+      "75",
+      "177",
+      "407",
+      "215",
+      "698"
+    ]
+  },
+  "artifactsWithZodiac": [
+    
+    {
+      "id": "36",
+      "name": "黄釉瓷虎子",
+      "fullName": "【宋】黄釉瓷虎子",
+      "period": "宋",
+      "image": "https://file.szmuseum.com/WaterMark/文章管理缩略图/出土_0205.jpg",
+      "localImage": "museum_images/【宋】黄釉瓷虎子.jpg",
+      "zodiacs": [
+        "tiger"
+      ],
+      "zodiacNames": [
+        "虎"
+      ],
+      "confidence": 1.0,
+      "reasoning": "藏品名称明确提及了生肖动物'虎'，且藏品本身是以虎的形象制作的，符合与生肖的直接关联。"
+    },
+    {
+      "id": "43",
+      "name": "刺绣双龙残片",
+      "fullName": "【元】刺绣双龙残片",
+      "period": "元",
+      "image": "https://file.szmuseum.com/WaterMark/文章管理缩略图/出土_0215.jpg",
+      "localImage": "museum_images/【元】刺绣双龙残片.jpg",
+      "zodiacs": [
+        "dragon"
+      ],
+      "zodiacNames": [
+        "龙"
+      ],
+      "confidence": 1.0,
+      "reasoning": "藏品刺绣双龙残片直接描绘了龙的形象，且龙是中国十二生肖之一，因此与生肖有直接关联。"
+    },
+    {
+      "id": "47",
+      "name": "金镯(一对)",
+      "fullName": "【元】金镯(一对)",
+      "period": "元",
+      "image": "https://file.szmuseum.com/WaterMark/文章管理缩略图/出土_0219.jpg",
+      "localImage": "museum_images/【元】金镯(一对).jpg",
+      "zodiacs": [
+        "dragon"
+      ],
+      "zodiacNames": [
+        "龙"
+      ],
+      "confidence": 0.9,
+      "reasoning": "藏品的龙首设计直接与生肖中的龙相关，且龙是中国文化中重要的象征，符合生肖动物的直接描绘标准。"
+    },
+    {
+      "id": "53",
+      "name": "银镜架",
+      "fullName": "【元】银镜架",
+      "period": "元",
+      "image": "https://file.szmuseum.com/WaterMark/文章管理缩略图/出土_0225.jpg",
+      "localImage": "museum_images/【元】银镜架.jpg",
+      "zodiacs": [
+        "rabbit",
+        "dragon"
+      ],
+      "zodiacNames": [
+        "兔",
+        "龙"
+      ],
+      "confidence": 0.8,
+      "reasoning": "藏品中明确雕刻了玉兔和团龙，符合与生肖动物形象直接相关的标准。"
+    },
+    {
+      "id": "56",
+      "name": "大铜镜",
+      "fullName": "【元】大铜镜",
+      "period": "元",
+      "image": "https://file.szmuseum.com/WaterMark/文章管理缩略图/出土_0229.jpg",
+      "localImage": "museum_images/【元】大铜镜.jpg",
+      "zodiacs": [
+        "tiger"
+      ],
+      "zodiacNames": [
+        "虎"
+      ],
+      "confidence": 0.8,
+      "reasoning": "藏品内区饰有四兽相逐，可能暗示与生肖相关，且虎为生肖之一，故与虎有直接关联。"
+    },
+    {
+      "id": "57",
+      "name": "银鎏金带饰",
+      "fullName": "【元】银鎏金带饰",
+      "period": "元",
+      "image": "https://file.szmuseum.com/WaterMark/文章管理缩略图/出土_0230.jpg",
+      "localImage": "museum_images/【元】银鎏金带饰.jpg",
+      "zodiacs": [
+        "tiger"
+      ],
+      "zodiacNames": [
+        "虎"
+      ],
+      "confidence": 0.9,
+      "reasoning": "藏品描述中提到的麒麟图与虎相关，且虎是中国十二生肖之一，因此与生肖有直接关联。"
+    },
+    {
+      "id": "60",
+      "name": "铜镜",
+      "fullName": "【汉】铜镜",
+      "period": "汉",
+      "image": "https://file.szmuseum.com/WaterMark/文章管理缩略图/出土_0145.jpg",
+      "localImage": "museum_images/【汉】铜镜.jpg",
+      "zodiacs": [
+        "dragon",
+        "tiger"
+      ],
+      "zodiacNames": [
+        "龙",
+        "虎"
+      ],
+      "confidence": 0.8,
+      "reasoning": "藏品背面装饰有龙和虎的形象，符合直接描绘生肖动物的标准。"
+    },
+    {
+      "id": "70",
+      "name": "青瓷虎子",
+      "fullName": "【六朝】青瓷虎子",
+      "period": "六朝",
+      "image": "https://file.szmuseum.com/WaterMark/文章管理缩略图/出土_0156.jpg",
+      "localImage": "museum_images/【六朝】青瓷虎子.jpg",
+      "zodiacs": [
+        "tiger"
+      ],
+      "zodiacNames": [
+        "虎"
+      ],
+      "confidence": 1.0,
+      "reasoning": "藏品名称明确提及了生肖动物'虎'，且其形状和装饰也直接描绘了虎的形象，符合与生肖的直接关联。"
+    },
+    {
+      "id": "75",
+      "name": "玉猪",
+      "fullName": "【六朝】玉猪",
+      "period": "六朝",
+      "image": "https://file.szmuseum.com/WaterMark/文章管理缩略图/出土_0161.jpg",
+      "localImage": "museum_images/【六朝】玉猪.jpg",
+      "zodiacs": [
+        "pig"
+      ],
+      "zodiacNames": [
+        "猪"
+      ],
+      "confidence": 1.0,
+      "reasoning": "藏品名称明确提及生肖动物'猪'，且为玉制品，符合生肖相关的标准。"
+    },
+    {
+      "id": "79",
+      "name": "青瓷虎子",
+      "fullName": "【晋】青瓷虎子",
+      "period": "晋",
+      "image": "https://file.szmuseum.com/WaterMark/文章管理缩略图/出土_0166.jpg",
+      "localImage": "museum_images/【晋】青瓷虎子.jpg",
+      "zodiacs": [
+        "tiger"
+      ],
+      "zodiacNames": [
+        "虎"
+      ],
+      "confidence": 1.0,
+      "reasoning": "藏品名称明确提及了生肖动物'虎'，且为青瓷虎子，直接与生肖虎相关。"
+    },
+    {
+      "id": "80",
+      "name": "褐釉鸡首壶",
+      "fullName": "【晋】褐釉鸡首壶",
+      "period": "晋",
+      "image": "https://file.szmuseum.com/WaterMark/文章管理缩略图/出土_0167.jpg",
+      "localImage": "museum_images/【晋】褐釉鸡首壶.jpg",
+      "zodiacs": [
+        "rooster"
+      ],
+      "zodiacNames": [
+        "鸡"
+      ],
+      "confidence": 0.9,
+      "reasoning": "藏品名称中明确提及了'鸡'，且壶的形状为鸡首，符合与生肖鸡的直接关联。"
+    },
+    {
+      "id": "81",
+      "name": "金龙",
+      "fullName": "【唐】金龙",
+      "period": "唐",
+      "image": "https://file.szmuseum.com/WaterMark/文章管理缩略图/出土_0171.jpg",
+      "localImage": "museum_images/【唐】金龙.jpg",
+      "zodiacs": [
+        "dragon"
+      ],
+      "zodiacNames": [
+        "龙"
+      ],
+      "confidence": 1.0,
+      "reasoning": "藏品名称明确提及生肖动物'龙'，且其形象与中国十二生肖中的龙直接相关。"
+    },
+    {
+      "id": "82",
+      "name": "鎏金铜龙",
+      "fullName": "【唐】鎏金铜龙",
+      "period": "唐",
+      "image": "https://file.szmuseum.com/WaterMark/文章管理缩略图/出土_0172.jpg",
+      "localImage": "museum_images/【唐】鎏金铜龙.jpg",
+      "zodiacs": [
+        "dragon"
+      ],
+      "zodiacNames": [
+        "龙"
+      ],
+      "confidence": 1.0,
+      "reasoning": "藏品名称和描述中明确提及了龙的形象，龙是中国十二生肖之一，因此与生肖有直接关联。"
+    },
+    {
+      "id": "83",
+      "name": "铜龙",
+      "fullName": "【五代】铜龙",
+      "period": "五代",
+      "image": "https://file.szmuseum.com/WaterMark/文章管理缩略图/出土_0173.jpg",
+      "localImage": "museum_images/【五代】铜龙.jpg",
+      "zodiacs": [
+        "dragon"
+      ],
+      "zodiacNames": [
+        "龙"
+      ],
+      "confidence": 1.0,
+      "reasoning": "藏品名称和描述中明确提及了龙的形象，符合生肖龙的直接关联标准。"
+    },
+    {
+      "id": "84",
+      "name": "铜龙",
+      "fullName": "【五代】铜龙",
+      "period": "五代",
+      "image": "https://file.szmuseum.com/WaterMark/文章管理缩略图/出土_0173.jpg",
+      "localImage": "museum_images/【五代】铜龙.jpg",
+      "zodiacs": [
+        "dragon"
+      ],
+      "zodiacNames": [
+        "龙"
+      ],
+      "confidence": 1.0,
+      "reasoning": "藏品名称和描述中明确提及了龙的形象，符合生肖龙的定义，且龙是中国十二生肖之一。"
+    },
+    {
+      "id": "85",
+      "name": "金龙",
+      "fullName": "【宋】金龙",
+      "period": "宋",
+      "image": "https://file.szmuseum.com/WaterMark/文章管理缩略图/出土_0174.jpg",
+      "localImage": "museum_images/【宋】金龙.jpg",
+      "zodiacs": [
+        "dragon"
+      ],
+      "zodiacNames": [
+        "龙"
+      ],
+      "confidence": 1.0,
+      "reasoning": "藏品名称明确提及了生肖动物'龙'，且其形象特征与龙的传统形象相符，因此与生肖有直接关联。"
+    },
+    {
+      "id": "87",
+      "name": "玉简",
+      "fullName": "【宋】玉简",
+      "period": "宋",
+      "image": "https://file.szmuseum.com/WaterMark/文章管理缩略图/出土_0176.jpg",
+      "localImage": "museum_images/【宋】玉简.jpg",
+      "zodiacs": [
+        "dragon"
+      ],
+      "zodiacNames": [
+        "龙"
+      ],
+      "confidence": 0.9,
+      "reasoning": "藏品中提到'金龙'，直接与生肖中的龙相关，且龙在中国文化中具有重要地位。"
+    },
+    {
+      "id": "90",
+      "name": "陶牵马胡人俑",
+      "fullName": "【唐】陶牵马胡人俑",
+      "period": "唐",
+      "image": "https://file.szmuseum.com/WaterMark/文章管理缩略图/出土_0181.jpg",
+      "localImage": "museum_images/【唐】陶牵马胡人俑.jpg",
+      "zodiacs": [
+        "horse"
+      ],
+      "zodiacNames": [
+        "马"
+      ],
+      "confidence": 1.0,
+      "reasoning": "藏品名称和描述中明确提及了马，且马是中国十二生肖之一，因此与生肖有直接关联。"
+    },
+    {
+      "id": "104",
+      "name": "木龙",
+      "fullName": "【北宋】木龙",
+      "period": "北宋",
+      "image": "https://file.szmuseum.com/WaterMark/文章管理缩略图/出土_0198.jpg",
+      "localImage": "museum_images/【北宋】木龙.jpg",
+      "zodiacs": [
+        "dragon"
+      ],
+      "zodiacNames": [
+        "龙"
+      ],
+      "confidence": 1.0,
+      "reasoning": "藏品名称明确提及生肖动物'龙'，且描述中雕刻了青龙形象，符合与生肖的直接关联。"
+    },
+    {
+      "id": "105",
+      "name": "木虎",
+      "fullName": "【北宋】木虎",
+      "period": "北宋",
+      "image": "https://file.szmuseum.com/WaterMark/文章管理缩略图/出土_0199.jpg",
+      "localImage": "museum_images/【北宋】木虎.jpg",
+      "zodiacs": [
+        "tiger"
+      ],
+      "zodiacNames": [
+        "虎"
+      ],
+      "confidence": 1.0,
+      "reasoning": "藏品名称明确提及生肖动物'虎'，且雕刻的木虎形象直接描绘了生肖动物的形象，符合与生肖的直接关联。"
+    },
+    {
+      "id": "177",
+      "name": "铜鼎",
+      "fullName": "【战国】铜鼎",
+      "period": "战国",
+      "image": "https://file.szmuseum.com/WaterMark/文章管理缩略图/出土_0095.jpg",
+      "localImage": "museum_images/【战国】铜鼎.jpg",
+      "zodiacs": [
+        "pig"
+      ],
+      "zodiacNames": [
+        "猪"
+      ],
+      "confidence": 0.9,
+      "reasoning": "藏品内盛有幼豕的骨骼，直接与生肖猪相关，且铜鼎的装饰元素和形制并未直接描绘其他生肖动物。"
+    },
+    {
+      "id": "186",
+      "name": "玉敛葬饰件",
+      "fullName": "【春秋】玉敛葬饰件",
+      "period": "春秋",
+      "image": "https://file.szmuseum.com/WaterMark/文章管理缩略图/出土_0105.jpg",
+      "localImage": "museum_images/【春秋】玉敛葬饰件.jpg",
+      "zodiacs": [
+        "tiger"
+      ],
+      "zodiacNames": [
+        "虎"
+      ],
+      "confidence": 0.9,
+      "reasoning": "藏品中包含虎形玉饰，直接描绘了生肖动物虎的形象，因此与生肖有直接关联。"
+    },
+    {
+      "id": "197",
+      "name": "青铜盉盖",
+      "fullName": "【战国】青铜盉盖",
+      "period": "战国",
+      "image": "https://file.szmuseum.com/WaterMark/文章管理缩略图/出土_0114.jpg",
+      "localImage": "museum_images/【战国】青铜盉盖.jpg",
+      "zodiacs": [
+        "monkey"
+      ],
+      "zodiacNames": [
+        "猴"
+      ],
+      "confidence": 1.0,
+      "reasoning": "藏品中央立有猴形纽，直接描绘了生肖动物猴的形象，符合与生肖相关的标准。"
+    },
+    {
+      "id": "207",
+      "name": "玉璧",
+      "fullName": "【西汉】玉璧",
+      "period": "西汉",
+      "image": "https://file.szmuseum.com/WaterMark/文章管理缩略图/出土_0127.jpg",
+      "localImage": "museum_images/【西汉】玉璧.jpg",
+      "zodiacs": [
+        "dragon"
+      ],
+      "zodiacNames": [
+        "龙"
+      ],
+      "confidence": 0.8,
+      "reasoning": "藏品外圈刻有龙凤纹，龙是中国十二生肖之一，因此与生肖有直接关联。"
+    },
+    {
+      "id": "213",
+      "name": "陶捧鸡男侍俑",
+      "fullName": "【汉】陶捧鸡男侍俑",
+      "period": "汉",
+      "image": "https://file.szmuseum.com/WaterMark/文章管理缩略图/出土_0134.jpg",
+      "localImage": "museum_images/【汉】陶捧鸡男侍俑.jpg",
+      "zodiacs": [
+        "rooster"
+      ],
+      "zodiacNames": [
+        "鸡"
+      ],
+      "confidence": 0.9,
+      "reasoning": "藏品名称中明确提及了'鸡'，与生肖中的'鸡'直接相关。"
+    },
+    {
+      "id": "215",
+      "name": "釉陶屋",
+      "fullName": "【汉】釉陶屋",
+      "period": "汉",
+      "image": "https://file.szmuseum.com/WaterMark/文章管理缩略图/出土_0136.jpg",
+      "localImage": "museum_images/【汉】釉陶屋.jpg",
+      "zodiacs": [
+        "pig"
+      ],
+      "zodiacNames": [
+        "猪"
+      ],
+      "confidence": 0.9,
+      "reasoning": "藏品内置陶猪，直接描绘了生肖猪的形象，符合与生肖相关的标准。"
+    },
+    {
+      "id": "217",
+      "name": "铜兽镇",
+      "fullName": "【汉】铜兽镇",
+      "period": "汉",
+      "image": "https://file.szmuseum.com/WaterMark/文章管理缩略图/出土_0138.jpg",
+      "localImage": "museum_images/【汉】铜兽镇.jpg",
+      "zodiacs": [
+        "horse"
+      ],
+      "zodiacNames": [
+        "马"
+      ],
+      "confidence": 0.9,
+      "reasoning": "藏品为卧马形，直接描绘了马的形象，因此与生肖马有直接关联。"
+    },
+    {
+      "id": "220",
+      "name": "铜夔龙规矩镜",
+      "fullName": "【汉】铜夔龙规矩镜",
+      "period": "汉",
+      "image": "https://file.szmuseum.com/WaterMark/文章管理缩略图/出土_0141.jpg",
+      "localImage": "museum_images/【汉】铜夔龙规矩镜.jpg",
+      "zodiacs": [
+        "dragon"
+      ],
+      "zodiacNames": [
+        "龙"
+      ],
+      "confidence": 0.8,
+      "reasoning": "藏品名称中的'夔龙'直接提及了龙，符合生肖动物的定义。"
+    },
+    {
+      "id": "236",
+      "name": "黄玉书镇",
+      "fullName": "【清】黄玉书镇",
+      "period": "清",
+      "image": "https://file.szmuseum.com/WaterMark/文章管理缩略图/20210207150736ylS5go.jpg",
+      "localImage": "museum_images/【清】黄玉书镇.jpg",
+      "zodiacs": [
+        "dragon"
+      ],
+      "zodiacNames": [
+        "龙"
+      ],
+      "confidence": 1.0,
+      "reasoning": "藏品描述中明确雕刻了龙的形象，且龙是中国十二生肖之一，因此与生肖有直接关联。"
+    },
+    {
+      "id": "240",
+      "name": "绿釉兔形水注",
+      "fullName": "【清】绿釉兔形水注",
+      "period": "清",
+      "image": "https://file.szmuseum.com/WaterMark/文章管理缩略图/文房雅玩_0207.jpg",
+      "localImage": "museum_images/【清】绿釉兔形水注.jpg",
+      "zodiacs": [
+        "rabbit"
+      ],
+      "zodiacNames": [
+        "兔"
+      ],
+      "confidence": 1.0,
+      "reasoning": "藏品名称明确提及兔子，并且其造型直接描绘了兔子形象，符合与生肖兔的直接关联。"
+    },
+    {
+      "id": "242",
+      "name": "白玉云龙纹方洗",
+      "fullName": "【明】白玉云龙纹方洗",
+      "period": "明",
+      "image": "https://file.szmuseum.com/WaterMark/文章管理缩略图/文房雅玩_0057.jpg",
+      "localImage": "museum_images/【明】白玉云龙纹方洗.jpg",
+      "zodiacs": [
+        "dragon"
+      ],
+      "zodiacNames": [
+        "龙"
+      ],
+      "confidence": 0.9,
+      "reasoning": "藏品上雕刻有云龙纹，龙是中国十二生肖之一，因此与生肖有直接关联。"
+    },
+    {
+      "id": "252",
+      "name": "紫檀木管乌龙水笔",
+      "fullName": "【清】紫檀木管乌龙水笔",
+      "period": "清",
+      "image": "https://file.szmuseum.com/WaterMark/文章管理缩略图/20230216140008N5bLIL.jpg",
+      "localImage": "museum_images/【清】紫檀木管乌龙水笔.jpg",
+      "zodiacs": [
+        "dragon"
+      ],
+      "zodiacNames": [
+        "龙"
+      ],
+      "confidence": 0.9,
+      "reasoning": "藏品的笔扣及笔套上雕刻有龙的形象，且龙是中国十二生肖之一，因此与生肖有直接关联。"
+    },
+    {
+      "id": "253",
+      "name": "朱砂墨",
+      "fullName": "【清】朱砂墨",
+      "period": "清",
+      "image": "https://file.szmuseum.com/WaterMark/文章管理缩略图/文房雅玩_0114.jpg",
+      "localImage": "museum_images/【清】朱砂墨.jpg",
+      "zodiacs": [
+        "dragon"
+      ],
+      "zodiacNames": [
+        "龙"
+      ],
+      "confidence": 0.9,
+      "reasoning": "藏品上雕刻了五爪苍龙，直接描绘了与生肖相关的龙，因此与生肖有直接关联。"
+    },
+    {
+      "id": "263",
+      "name": "麻酱釉地白花抢珠龙筒炉",
+      "fullName": "【明】麻酱釉地白花抢珠龙筒炉",
+      "period": "明",
+      "image": "https://file.szmuseum.com/WaterMark/文章管理缩略图/香事清心_147.jpg",
+      "localImage": "museum_images/【明】麻酱釉地白花抢珠龙筒炉.jpg",
+      "zodiacs": [
+        "dragon"
+      ],
+      "zodiacNames": [
+        "龙"
+      ],
+      "confidence": 0.9,
+      "reasoning": "藏品的外壁饰有抢珠龙纹，直接描绘了龙的形象，符合与生肖龙的直接关联。"
+    },
+    {
+      "id": "276",
+      "name": "紫檀雕九螭笔筒",
+      "fullName": "【清】紫檀雕九螭笔筒",
+      "period": "清",
+      "image": "https://file.szmuseum.com/WaterMark/文章管理缩略图/20210207162142lBS4Ky.jpg",
+      "localImage": "museum_images/【清】紫檀雕九螭笔筒.jpg",
+      "zodiacs": [
+        "dragon"
+      ],
+      "zodiacNames": [
+        "龙"
+      ],
+      "confidence": 0.9,
+      "reasoning": "藏品中雕刻了九条螭，螭是龙的一种表现形式，直接与龙相关，因此与生肖龙有直接关联。"
+    },
+    {
+      "id": "297",
+      "name": "鼠耳三足铜炉",
+      "fullName": "【清】鼠耳三足铜炉",
+      "period": "清",
+      "image": "https://file.szmuseum.com/WaterMark/文章管理缩略图/香事清心_122.jpg",
+      "localImage": "museum_images/【清】鼠耳三足铜炉.jpg",
+      "zodiacs": [
+        "rat"
+      ],
+      "zodiacNames": [
+        "鼠"
+      ],
+      "confidence": 1.0,
+      "reasoning": "藏品名称和描述中明确提及了鼠的形象，且鼠耳三足铜炉的设计以鼠为主题，符合与生肖相关的标准。"
+    },
+    {
+      "id": "303",
+      "name": "白玉乳钉匜",
+      "fullName": "【明】白玉乳钉匜",
+      "period": "明",
+      "image": "https://file.szmuseum.com/WaterMark/文章管理缩略图/20210207125304wPpDVA.jpg",
+      "localImage": "museum_images/【明】白玉乳钉匜.jpg",
+      "zodiacs": [
+        "dragon"
+      ],
+      "zodiacNames": [
+        "龙"
+      ],
+      "confidence": 0.9,
+      "reasoning": "藏品描述中提到的透雕龙形把手直接与生肖龙相关，符合生肖动物形象的直接描绘。"
+    },
+    {
+      "id": "323",
+      "name": "御制蕴玉斋藏墨",
+      "fullName": "【清】御制蕴玉斋藏墨",
+      "period": "清",
+      "image": "https://file.szmuseum.com/WaterMark/文章管理缩略图/文房雅玩_0104.jpg",
+      "localImage": "museum_images/【清】御制蕴玉斋藏墨.jpg",
+      "zodiacs": [
+        "dragon"
+      ],
+      "zodiacNames": [
+        "龙"
+      ],
+      "confidence": 0.9,
+      "reasoning": "藏品上雕刻有螭龙纹，螭龙是龙的形象，直接与中国十二生肖中的龙相关。"
+    },
+    {
+      "id": "333",
+      "name": "青花云龙纹笔船",
+      "fullName": "【清】青花云龙纹笔船",
+      "period": "清",
+      "image": "https://file.szmuseum.com/WaterMark/文章管理缩略图/20230216141324yy7Rvl.jpg",
+      "localImage": "museum_images/【清】青花云龙纹笔船.jpg",
+      "zodiacs": [
+        "dragon"
+      ],
+      "zodiacNames": [
+        "龙"
+      ],
+      "confidence": 0.9,
+      "reasoning": "藏品上绘有双龙戏珠的图案，龙是中国十二生肖之一，因此与生肖有直接关联。"
+    },
+    {
+      "id": "343",
+      "name": "三羊三足炉",
+      "fullName": "【清】三羊三足炉",
+      "period": "清",
+      "image": "https://file.szmuseum.com/WaterMark/文章管理缩略图/香事清心_108.jpg",
+      "localImage": "museum_images/【清】三羊三足炉.jpg",
+      "zodiacs": [
+        "goat"
+      ],
+      "zodiacNames": [
+        "羊"
+      ],
+      "confidence": 0.9,
+      "reasoning": "藏品三羊三足炉直接描绘了羊的形象，且羊在中国十二生肖中对应于‘羊’。因此，与生肖有直接关联。"
+    },
+    {
+      "id": "344",
+      "name": "紫檀嵌银丝八角杯",
+      "fullName": "【清】紫檀嵌银丝八角杯",
+      "period": "清",
+      "image": "https://file.szmuseum.com/WaterMark/文章管理缩略图/20210207162648sC1STF.jpg",
+      "localImage": "museum_images/【清】紫檀嵌银丝八角杯.jpg",
+      "zodiacs": [
+        "dragon"
+      ],
+      "zodiacNames": [
+        "龙"
+      ],
+      "confidence": 0.9,
+      "reasoning": "藏品中雕刻了两条相对嬉戏的螭龙，螭龙与中国传统文化中的龙有直接关联，因此与生肖龙相关。"
+    },
+    {
+      "id": "357",
+      "name": "白玉匜",
+      "fullName": "【明】白玉匜",
+      "period": "明",
+      "image": "https://file.szmuseum.com/WaterMark/文章管理缩略图/20210207125538ixuhNm.jpg",
+      "localImage": "museum_images/【明】白玉匜.jpg",
+      "zodiacs": [
+        "dragon"
+      ],
+      "zodiacNames": [
+        "龙"
+      ],
+      "confidence": 0.9,
+      "reasoning": "藏品描述中提到的透雕龙首口，直接与生肖中的龙相关，符合生肖动物形象的直接描绘。"
+    },
+    {
+      "id": "376",
+      "name": "白玉螭虎书镇",
+      "fullName": "【清】白玉螭虎书镇",
+      "period": "清",
+      "image": "https://file.szmuseum.com/WaterMark/文章管理缩略图/文房雅玩_0139.jpg",
+      "localImage": "museum_images/【清】白玉螭虎书镇.jpg",
+      "zodiacs": [
+        "tiger"
+      ],
+      "zodiacNames": [
+        "虎"
+      ],
+      "confidence": 1.0,
+      "reasoning": "藏品上雕刻了螭虎，直接描绘了生肖中的虎，因此与生肖有直接关联。"
+    },
+    {
+      "id": "396",
+      "name": "田黄卧马书镇",
+      "fullName": "【清】田黄卧马书镇",
+      "period": "清",
+      "image": "https://file.szmuseum.com/WaterMark/文章管理缩略图/文房雅玩_0141.jpg",
+      "localImage": "museum_images/【清】田黄卧马书镇.jpg",
+      "zodiacs": [
+        "horse"
+      ],
+      "zodiacNames": [
+        "马"
+      ],
+      "confidence": 1.0,
+      "reasoning": "藏品名称和描述均明确描绘了马的形象，且马是中国十二生肖之一，因此与生肖有直接关联。"
+    },
+    {
+      "id": "400",
+      "name": "碧玉三羊摆件",
+      "fullName": "【清】碧玉三羊摆件",
+      "period": "清",
+      "image": "https://file.szmuseum.com/WaterMark/文章管理缩略图/20210207134426C8tXkB.jpg",
+      "localImage": "museum_images/【清】碧玉三羊摆件.jpg",
+      "zodiacs": [
+        "goat"
+      ],
+      "zodiacNames": [
+        "羊"
+      ],
+      "confidence": 0.9,
+      "reasoning": "藏品为三羊摆件，直接描绘了羊的形象，且名称中明确提及了羊，因此与生肖羊有直接关联。"
+    },
+    {
+      "id": "407",
+      "name": "象牙浅刻真山卜隐图方",
+      "fullName": "【近代】象牙浅刻真山卜隐图方",
+      "period": "近代",
+      "image": "https://file.szmuseum.com/WaterMark/文章管理缩略图/20210207165101kPH0Ls.jpg",
+      "localImage": "museum_images/【近代】象牙浅刻真山卜隐图方.jpg",
+      "zodiacs": [
+        "rat",
+        "horse",
+        "monkey",
+        "rooster",
+        "rabbit",
+        "pig",
+        "snake",
+        "dog",
+        "ox"
+      ],
+      "zodiacNames": [
+        "鼠",
+        "马",
+        "猴",
+        "鸡",
+        "兔",
+        "猪",
+        "蛇",
+        "狗",
+        "牛"
+      ],
+      "confidence": 0.9,
+      "reasoning": "藏品直接描绘了多个生肖动物的形象，符合与生肖相关的标准。"
+    },
+    {
+      "id": "408",
+      "name": "龙泉窑三足炉",
+      "fullName": "【清】龙泉窑三足炉",
+      "period": "清",
+      "image": "https://file.szmuseum.com/WaterMark/文章管理缩略图/香事清心_83.jpg",
+      "localImage": "museum_images/【清】龙泉窑三足炉.jpg",
+      "zodiacs": [
+        "dragon"
+      ],
+      "zodiacNames": [
+        "龙"
+      ],
+      "confidence": 1.0,
+      "reasoning": "该藏品名称中明确提及了'龙'，与中国十二生肖中的龙直接相关。"
+    },
+    {
+      "id": "409",
+      "name": "寿山石印",
+      "fullName": "【清】寿山石印",
+      "period": "清",
+      "image": "https://file.szmuseum.com/WaterMark/文章管理缩略图/文房雅玩_0222.jpg",
+      "localImage": "museum_images/【清】寿山石印.jpg",
+      "zodiacs": [
+        "tiger",
+        "goat"
+      ],
+      "zodiacNames": [
+        "虎",
+        "羊"
+      ],
+      "confidence": 0.8,
+      "reasoning": "藏品印文中提及了‘双虎’和‘瘦羊’，直接关联到生肖虎和羊。"
+    },
+    {
+      "id": "410",
+      "name": "方于鲁夔龙尊墨",
+      "fullName": "【明】方于鲁夔龙尊墨",
+      "period": "明",
+      "image": "https://file.szmuseum.com/WaterMark/文章管理缩略图/文房雅玩_0072.jpg",
+      "localImage": "museum_images/【明】方于鲁夔龙尊墨.jpg",
+      "zodiacs": [
+        "dragon"
+      ],
+      "zodiacNames": [
+        "龙"
+      ],
+      "confidence": 0.9,
+      "reasoning": "藏品上雕刻了夔龙纹，夔龙是与龙相关的形象，因此与生肖中的龙有直接关联。"
+    },
+    {
+      "id": "412",
+      "name": "白玉双牛衔禾摆件",
+      "fullName": "【清】白玉双牛衔禾摆件",
+      "period": "清",
+      "image": "https://file.szmuseum.com/WaterMark/文章管理缩略图/20210207134334TAwYxu.jpg",
+      "localImage": "museum_images/【清】白玉双牛衔禾摆件.jpg",
+      "zodiacs": [
+        "ox"
+      ],
+      "zodiacNames": [
+        "牛"
+      ],
+      "confidence": 0.9,
+      "reasoning": "藏品名称和描述中明确提及了牛的形象，符合生肖牛的直接关联。"
+    },
+    {
+      "id": "427",
+      "name": "羊耳圈足铜香炉",
+      "fullName": "【清】羊耳圈足铜香炉",
+      "period": "清",
+      "image": "https://file.szmuseum.com/WaterMark/文章管理缩略图/香事清心_138.jpg",
+      "localImage": "museum_images/【清】羊耳圈足铜香炉.jpg",
+      "zodiacs": [
+        "goat"
+      ],
+      "zodiacNames": [
+        "羊"
+      ],
+      "confidence": 0.9,
+      "reasoning": "藏品名称中明确提及了'羊'，与生肖中的'羊'直接相关，且羊在文化中寓意吉祥如意，符合生肖的主题。"
+    },
+    {
+      "id": "431",
+      "name": "汪鸿渐桑林里制墨",
+      "fullName": "【明】汪鸿渐桑林里制墨",
+      "period": "明",
+      "image": "https://file.szmuseum.com/WaterMark/文章管理缩略图/文房雅玩_0074.jpg",
+      "localImage": "museum_images/【明】汪鸿渐桑林里制墨.jpg",
+      "zodiacs": [
+        "dragon"
+      ],
+      "zodiacNames": [
+        "龙"
+      ],
+      "confidence": 0.9,
+      "reasoning": "藏品上雕刻有双盘龙纹，直接描绘了龙的形象，因此与生肖龙有直接关联。"
+    },
+    {
+      "id": "439",
+      "name": "马槽炉",
+      "fullName": "【清】马槽炉",
+      "period": "清",
+      "image": "https://file.szmuseum.com/WaterMark/文章管理缩略图/香事清心_55.jpg",
+      "localImage": "museum_images/【清】马槽炉.jpg",
+      "zodiacs": [
+        "horse"
+      ],
+      "zodiacNames": [
+        "马"
+      ],
+      "confidence": 0.9,
+      "reasoning": "藏品名称中明确提及了'马'，与生肖马直接相关。"
+    },
+    {
+      "id": "445",
+      "name": "王俊卿法云慧日墨",
+      "fullName": "【清】王俊卿法云慧日墨",
+      "period": "清",
+      "image": "https://file.szmuseum.com/WaterMark/文章管理缩略图/文房雅玩_0097.jpg",
+      "localImage": "museum_images/【清】王俊卿法云慧日墨.jpg",
+      "zodiacs": [
+        "dragon"
+      ],
+      "zodiacNames": [
+        "龙"
+      ],
+      "confidence": 0.9,
+      "reasoning": "藏品描述中提到的阴文蟠虺螭龙与龙的形象直接相关，因此与生肖龙有直接关联。"
+    },
+    {
+      "id": "449",
+      "name": "象牙印",
+      "fullName": "【清】象牙印",
+      "period": "清",
+      "image": "https://file.szmuseum.com/WaterMark/文章管理缩略图/文房雅玩_0229.jpg",
+      "localImage": "museum_images/【清】象牙印.jpg",
+      "zodiacs": [
+        "dragon"
+      ],
+      "zodiacNames": [
+        "龙"
+      ],
+      "confidence": 0.9,
+      "reasoning": "藏品印文中提及了'龙'，直接与生肖龙相关，符合生肖动物形象的描绘标准。"
+    },
+    {
+      "id": "458",
+      "name": "龙吟七弦琴",
+      "fullName": "【清】龙吟七弦琴",
+      "period": "清",
+      "image": "https://file.szmuseum.com/WaterMark/文章管理缩略图/文房雅玩_0258.jpg",
+      "localImage": "museum_images/【清】龙吟七弦琴.jpg",
+      "zodiacs": [
+        "dragon"
+      ],
+      "zodiacNames": [
+        "龙"
+      ],
+      "confidence": 0.9,
+      "reasoning": "藏品名称中提到'龙'，且琴底有龙池的雕刻，直接与生肖龙相关。"
+    },
+    {
+      "id": "460",
+      "name": "白玉螭虎大洗",
+      "fullName": "【明】白玉螭虎大洗",
+      "period": "明",
+      "image": "https://file.szmuseum.com/WaterMark/文章管理缩略图/20210207125003OgCthk.jpg",
+      "localImage": "museum_images/【明】白玉螭虎大洗.jpg",
+      "zodiacs": [
+        "tiger"
+      ],
+      "zodiacNames": [
+        "虎"
+      ],
+      "confidence": 0.9,
+      "reasoning": "藏品名称和描述中提到的螭虎与生肖虎直接相关，且其形象在器物上有明显的表现。"
+    },
+
+  
+    {
+      "id": "489",
+      "name": "玉龙环",
+      "fullName": "【宋】玉龙环",
+      "period": "宋",
+      "image": "https://file.szmuseum.com/WaterMark/文章管理缩略图/202102070957491kfeNt.jpg",
+      "localImage": "museum_images/【宋】玉龙环.jpg",
+      "zodiacs": [
+        "dragon"
+      ],
+      "zodiacNames": [
+        "龙"
+      ],
+      "confidence": 0.9,
+      "reasoning": "藏品名称中提及'龙'，且其形状和装饰与龙的形象直接相关，因此与生肖龙有直接关联。"
+    },
+    {
+      "id": "490",
+      "name": "锦边天鸡铜炉",
+      "fullName": "【清】锦边天鸡铜炉",
+      "period": "清",
+      "image": "https://file.szmuseum.com/WaterMark/文章管理缩略图/香事清心_38.jpg",
+      "localImage": "museum_images/【清】锦边天鸡铜炉.jpg",
+      "zodiacs": [
+        "rooster"
+      ],
+      "zodiacNames": [
+        "鸡"
+      ],
+      "confidence": 0.9,
+      "reasoning": "藏品名称中明确提及了'天鸡'，与生肖中的'鸡'直接相关，且描述中提到天鸡是古代传说中的神鸟，进一步确认了其与生肖的关联。"
+    },
+    {
+      "id": "503",
+      "name": "螭龙双耳杯",
+      "fullName": "【明】螭龙双耳杯",
+      "period": "明",
+      "image": "https://file.szmuseum.com/WaterMark/文章管理缩略图/20210207095933GdN6QW.jpg",
+      "localImage": "museum_images/【明】螭龙双耳杯.jpg",
+      "zodiacs": [
+        "dragon"
+      ],
+      "zodiacNames": [
+        "龙"
+      ],
+      "confidence": 0.9,
+      "reasoning": "藏品名称和装饰中均提及螭龙，螭龙与中国生肖中的龙直接相关，因此可以确定其与生肖有直接关联。"
+    },
+    {
+      "id": "504",
+      "name": "嵌银丝云纹压经炉",
+      "fullName": "【清】嵌银丝云纹压经炉",
+      "period": "清",
+      "image": "https://file.szmuseum.com/WaterMark/文章管理缩略图/香事清心_116.jpg",
+      "localImage": "museum_images/【清】嵌银丝云纹压经炉.jpg",
+      "zodiacs": [
+        "dragon"
+      ],
+      "zodiacNames": [
+        "龙"
+      ],
+      "confidence": 0.9,
+      "reasoning": "藏品装饰有云龙图案，龙是中国十二生肖之一，因此与生肖有直接关联。"
+    },
+    {
+      "id": "509",
+      "name": "端石螭龙云纹天然砚",
+      "fullName": "【清】端石螭龙云纹天然砚",
+      "period": "清",
+      "image": "https://file.szmuseum.com/WaterMark/文章管理缩略图/文房雅玩_0174.jpg",
+      "localImage": "museum_images/【清】端石螭龙云纹天然砚.jpg",
+      "zodiacs": [
+        "dragon"
+      ],
+      "zodiacNames": [
+        "龙"
+      ],
+      "confidence": 0.9,
+      "reasoning": "藏品上雕刻了螭龙形墨池，螭龙是与龙相关的形象，直接关联到中国十二生肖中的龙。"
+    },
+
+    {
+      "id": "521",
+      "name": "白玉螭虎圆杯",
+      "fullName": "【清】白玉螭虎圆杯",
+      "period": "清",
+      "image": "https://file.szmuseum.com/WaterMark/文章管理缩略图/20210207131450tmbUqr.jpg",
+      "localImage": "museum_images/【清】白玉螭虎圆杯.jpg",
+      "zodiacs": [
+        "tiger"
+      ],
+      "zodiacNames": [
+        "虎"
+      ],
+      "confidence": 0.9,
+      "reasoning": "藏品雕刻了螭虎的形象，直接与生肖虎相关，且名称中包含虎字，符合生肖动物的直接描绘标准。"
+    },
+    {
+      "id": "522",
+      "name": "龙泉窑水注",
+      "fullName": "【元】龙泉窑水注",
+      "period": "元",
+      "image": "https://file.szmuseum.com/WaterMark/文章管理缩略图/文房雅玩_0205.jpg",
+      "localImage": "museum_images/【元】龙泉窑水注.jpg",
+      "zodiacs": [
+        "dragon"
+      ],
+      "zodiacNames": [
+        "龙"
+      ],
+      "confidence": 0.9,
+      "reasoning": "藏品名称中提到'龙泉窑'，其中'龙'与生肖中的龙直接相关，且龙在中国文化中具有重要象征意义。"
+    },
+    {
+      "id": "536",
+      "name": "白玉螭虎洗",
+      "fullName": "【明】白玉螭虎洗",
+      "period": "明",
+      "image": "https://file.szmuseum.com/WaterMark/文章管理缩略图/文房雅玩_0056.jpg",
+      "localImage": "museum_images/【明】白玉螭虎洗.jpg",
+      "zodiacs": [
+        "tiger"
+      ],
+      "zodiacNames": [
+        "虎"
+      ],
+      "confidence": 0.9,
+      "reasoning": "藏品名称和描述中提到的螭虎与生肖中的虎直接相关，且螭虎的形象在中国文化中常与虎相关联。"
+    },
+    {
+      "id": "541",
+      "name": "三羊足铜炉",
+      "fullName": "【清】三羊足铜炉",
+      "period": "清",
+      "image": "https://file.szmuseum.com/WaterMark/文章管理缩略图/文房雅玩_0267.jpg",
+      "localImage": "museum_images/【清】三羊足铜炉.jpg",
+      "zodiacs": [
+        "goat"
+      ],
+      "zodiacNames": [
+        "羊"
+      ],
+      "confidence": 0.9,
+      "reasoning": "藏品三羊足铜炉直接描绘了三只羊的形象，且名称中明确提及了羊，因此与生肖羊有直接关联。"
+    },
+    {
+      "id": "553",
+      "name": "青花龙凤纹水盂",
+      "fullName": "【明】青花龙凤纹水盂",
+      "period": "明",
+      "image": "https://file.szmuseum.com/WaterMark/文章管理缩略图/文房雅玩_0204.jpg",
+      "localImage": "museum_images/【明】青花龙凤纹水盂.jpg",
+      "zodiacs": [
+        "dragon"
+      ],
+      "zodiacNames": [
+        "龙"
+      ],
+      "confidence": 0.9,
+      "reasoning": "藏品主体绘有龙凤纹，龙是中国十二生肖之一，因此与生肖有直接关联。"
+    },
+    {
+      "id": "572",
+      "name": "蚰耳圈足铜炉",
+      "fullName": "【清】蚰耳圈足铜炉",
+      "period": "清",
+      "image": "https://file.szmuseum.com/WaterMark/文章管理缩略图/香事清心_30.jpg",
+      "localImage": "museum_images/【清】蚰耳圈足铜炉.jpg",
+      "zodiacs": [
+        "dragon"
+      ],
+      "zodiacNames": [
+        "龙"
+      ],
+      "confidence": 0.8,
+      "reasoning": "藏品描述中提到的双蚰龙耳与龙的形象相关，符合生肖龙的特征。"
+    },
+    {
+      "id": "596",
+      "name": "彩色云龙纹双面粉蜡笺",
+      "fullName": "【清】彩色云龙纹双面粉蜡笺",
+      "period": "清",
+      "image": "https://file.szmuseum.com/WaterMark/文章管理缩略图/文房雅玩_0128.jpg",
+      "localImage": "museum_images/【清】彩色云龙纹双面粉蜡笺.jpg",
+      "zodiacs": [
+        "dragon"
+      ],
+      "zodiacNames": [
+        "龙"
+      ],
+      "confidence": 0.9,
+      "reasoning": "藏品描绘了云龙纹，龙是中国十二生肖之一，因此与生肖有直接关联。"
+    },
+    {
+      "id": "608",
+      "name": "白玉书镇",
+      "fullName": "【清】白玉书镇",
+      "period": "清",
+      "image": "https://file.szmuseum.com/WaterMark/文章管理缩略图/20210207150853I8V1aY.jpg",
+      "localImage": "museum_images/【清】白玉书镇.jpg",
+      "zodiacs": [
+        "tiger"
+      ],
+      "zodiacNames": [
+        "虎"
+      ],
+      "confidence": 0.9,
+      "reasoning": "藏品上雕刻了螭虎，直接描绘了与生肖相关的虎的形象，因此与生肖虎有直接关联。"
+    },
+    {
+      "id": "616",
+      "name": "错金银螭梁盉",
+      "fullName": "【明】错金银螭梁盉",
+      "period": "明",
+      "image": "https://file.szmuseum.com/WaterMark/文章管理缩略图/文房雅玩_0271.jpg",
+      "localImage": "museum_images/【明】错金银螭梁盉.jpg",
+      "zodiacs": [
+        "dragon"
+      ],
+      "zodiacNames": [
+        "龙"
+      ],
+      "confidence": 0.8,
+      "reasoning": "藏品的提梁设计为龙形，直接与生肖龙相关，且龙在中国文化中具有重要象征意义。"
+    },
+    {
+      "id": "624",
+      "name": "甪端薰炉",
+      "fullName": "【清】甪端薰炉",
+      "period": "清",
+      "image": "https://file.szmuseum.com/WaterMark/文章管理缩略图/香事清心_110.jpg",
+      "localImage": "museum_images/【清】甪端薰炉.jpg",
+      "zodiacs": [
+        "snake"
+      ],
+      "zodiacNames": [
+        "蛇"
+      ],
+      "confidence": 0.8,
+      "reasoning": "甪端薰炉的描述中提到四足踩一条蛇，直接与生肖蛇相关联，因此可以认为该藏品与生肖有一定关联。"
+    },
+    {
+      "id": "635",
+      "name": "描金云龙纹宫绢",
+      "fullName": "【清】描金云龙纹宫绢",
+      "period": "清",
+      "image": "https://file.szmuseum.com/WaterMark/文章管理缩略图/文房雅玩_0130.jpg",
+      "localImage": "museum_images/【清】描金云龙纹宫绢.jpg",
+      "zodiacs": [
+        "dragon"
+      ],
+      "zodiacNames": [
+        "龙"
+      ],
+      "confidence": 1.0,
+      "reasoning": "藏品描绘了龙的形象，且龙是中国十二生肖之一，因此与生肖有直接关联。"
+    },
+    {
+      "id": "636",
+      "name": "石上清泉七弦琴",
+      "fullName": "【明】石上清泉七弦琴",
+      "period": "明",
+      "image": "https://file.szmuseum.com/WaterMark/文章管理缩略图/文房雅玩_0254.jpg",
+      "localImage": "museum_images/【明】石上清泉七弦琴.jpg",
+      "zodiacs": [
+        "dragon",
+        "snake"
+      ],
+      "zodiacNames": [
+        "龙",
+        "蛇"
+      ],
+      "confidence": 0.8,
+      "reasoning": "藏品描述中提到琴底有龙池，且琴面有小蛇腹断纹，直接与龙和蛇相关联。"
+    },
+    {
+      "id": "639",
+      "name": "云龙纹铜炉",
+      "fullName": "【明】云龙纹铜炉",
+      "period": "明",
+      "image": "https://file.szmuseum.com/WaterMark/文章管理缩略图/香事清心_105.jpg",
+      "localImage": "museum_images/【明】云龙纹铜炉.jpg",
+      "zodiacs": [
+        "dragon"
+      ],
+      "zodiacNames": [
+        "龙"
+      ],
+      "confidence": 1.0,
+      "reasoning": "藏品云龙纹铜炉直接雕刻了龙的形象，龙是中国十二生肖之一，因此与生肖有直接关联。"
+    },
+    {
+      "id": "645",
+      "name": "黄玉云龙书镇",
+      "fullName": "【清】黄玉云龙书镇",
+      "period": "清",
+      "image": "https://file.szmuseum.com/WaterMark/文章管理缩略图/文房雅玩_0138.jpg",
+      "localImage": "museum_images/【清】黄玉云龙书镇.jpg",
+      "zodiacs": [
+        "dragon"
+      ],
+      "zodiacNames": [
+        "龙"
+      ],
+      "confidence": 0.9,
+      "reasoning": "藏品描述中明确雕刻了云龙形象，龙是中国十二生肖之一，因此与生肖有直接关联。"
+    },
+    {
+      "id": "653",
+      "name": "紫檀雕九螭笔筒",
+      "fullName": "【清】紫檀雕九螭笔筒",
+      "period": "清",
+      "image": "https://file.szmuseum.com/WaterMark/文章管理缩略图/20210303143901DVnH27.jpg",
+      "localImage": "museum_images/【清】紫檀雕九螭笔筒.jpg",
+      "zodiacs": [
+        "dragon",
+        "tiger"
+      ],
+      "zodiacNames": [
+        "龙",
+        "虎"
+      ],
+      "confidence": 0.8,
+      "reasoning": "藏品雕刻了螭虎和龙的形象，直接与生肖虎和龙相关。"
+    },
+    {
+      "id": "657",
+      "name": "田黄琢卧马",
+      "fullName": "【清】田黄琢卧马",
+      "period": "清",
+      "image": "https://file.szmuseum.com/WaterMark/文章管理缩略图/20210207145638qpNED0.jpg",
+      "localImage": "museum_images/【清】田黄琢卧马.jpg",
+      "zodiacs": [
+        "horse"
+      ],
+      "zodiacNames": [
+        "马"
+      ],
+      "confidence": 1.0,
+      "reasoning": "藏品名称和描述均明确描绘了马的形象，符合生肖马的相关性。"
+    },
+    {
+      "id": "668",
+      "name": "大金龙",
+      "fullName": "【唐】大金龙",
+      "period": "唐",
+      "image": "https://file.szmuseum.com/WaterMark/文章管理缩略图/20151031080937QqsK6H.png",
+      "localImage": "museum_images/【唐】大金龙.jpg",
+      "zodiacs": [
+        "dragon"
+      ],
+      "zodiacNames": [
+        "龙"
+      ],
+      "confidence": 1.0,
+      "reasoning": "藏品名称和描述中均提及龙，且龙是中国十二生肖之一，因此与生肖有直接关联。"
+    },
+    {
+      "id": "669",
+      "name": "仿旧玉虎面枭首琮式方罇",
+      "fullName": "仿旧玉虎面枭首琮式方罇",
+      "period": "",
+      "image": "https://file.szmuseum.com/WaterMark/文章管理缩略图/20151031060639VY3JPK.png",
+      "localImage": "museum_images/仿旧玉虎面枭首琮式方罇.jpg",
+      "zodiacs": [
+        "tiger"
+      ],
+      "zodiacNames": [
+        "虎"
+      ],
+      "confidence": 1.0,
+      "reasoning": "藏品名称和描述中明确雕刻了虎面，直接与生肖虎相关联。"
+    },
+    {
+      "id": "671",
+      "name": "银镜架",
+      "fullName": "【元】银镜架",
+      "period": "元",
+      "image": "https://file.szmuseum.com/WaterMark/文章管理缩略图/2015103107331029Z4SQ.png",
+      "localImage": "museum_images/【元】银镜架.jpg",
+      "zodiacs": [
+        "rabbit",
+        "dragon"
+      ],
+      "zodiacNames": [
+        "兔",
+        "龙"
+      ],
+      "confidence": 0.8,
+      "reasoning": "藏品描述中提到的'云游于天际的龙'和'奔驰的玉兔'直接与生肖动物相关，符合分析标准。"
+    },
+    {
+      "id": "672",
+      "name": "象牙龙头马蹬",
+      "fullName": "【清】象牙龙头马蹬",
+      "period": "清",
+      "image": "https://file.szmuseum.com/WaterMark/文章管理缩略图/20151031074243Z7AeZ7.png",
+      "localImage": "museum_images/【清】象牙龙头马蹬.jpg",
+      "zodiacs": [
+        "dragon",
+        "horse"
+      ],
+      "zodiacNames": [
+        "龙",
+        "马"
+      ],
+      "confidence": 0.9,
+      "reasoning": "藏品名称中提及了'龙头'，直接与生肖龙相关，同时'马蹬'与生肖马相关，符合生肖动物的直接描绘或提及。"
+    },
+    {
+      "id": "675",
+      "name": "螺钿嵌玉金扣圆盒",
+      "fullName": "【清】螺钿嵌玉金扣圆盒",
+      "period": "清",
+      "image": "https://file.szmuseum.com/WaterMark/文章管理缩略图/20210207170018LKKBGv.jpg",
+      "localImage": "museum_images/【清】螺钿嵌玉金扣圆盒.jpg",
+      "zodiacs": [
+        "dragon"
+      ],
+      "zodiacNames": [
+        "龙"
+      ],
+      "confidence": 0.9,
+      "reasoning": "藏品中有螭龙的形象，螭龙是龙的变种，直接与生肖龙相关。"
+    },
+    {
+      "id": "698",
+      "name": "女金冠",
+      "fullName": "【元】女金冠",
+      "period": "元",
+      "image": "https://file.szmuseum.com/WaterMark/文章管理缩略图/20150616092820dsFbVO.jpg",
+      "localImage": "museum_images/【元】女金冠.jpg",
+      "zodiacs": [
+        "rat",
+        "ox",
+        "tiger",
+        "rabbit",
+        "goat",
+        "pig"
+      ],
+      "zodiacNames": [
+        "鼠",
+        "牛",
+        "虎",
+        "兔",
+        "羊",
+        "猪"
+      ],
+      "confidence": 1.0,
+      "reasoning": "藏品上明确刻有六个生肖动物的形象，符合直接描绘或雕刻生肖动物的标准，因此与多个生肖直接相关。"
+    },
+    {
+      "id": "702",
+      "name": "螺钿嵌玉金扣腰圆盒",
+      "fullName": "【清】螺钿嵌玉金扣腰圆盒",
+      "period": "清",
+      "image": "https://file.szmuseum.com/WaterMark/文章管理缩略图/20210207165802mzDuXM.jpg",
+      "localImage": "museum_images/【清】螺钿嵌玉金扣腰圆盒.jpg",
+      "zodiacs": [
+        "dragon"
+      ],
+      "zodiacNames": [
+        "龙"
+      ],
+      "confidence": 0.9,
+      "reasoning": "藏品中镶嵌有白玉螭龙，直接描绘了与生肖相关的龙形象，因此与生肖龙有直接关联。"
+    },
+    {
+      "id": "719",
+      "name": "白玉双耳龙杯",
+      "fullName": "【清】白玉双耳龙杯",
+      "period": "清",
+      "image": "https://file.szmuseum.com/WaterMark/文章管理缩略图/202102071308469FXf1T.jpg",
+      "localImage": "museum_images/【清】白玉双耳龙杯.jpg",
+      "zodiacs": [
+        "dragon"
+      ],
+      "zodiacNames": [
+        "龙"
+      ],
+      "confidence": 1.0,
+      "reasoning": "藏品白玉双耳龙杯直接雕刻了龙的形象，龙是中国十二生肖之一，因此与生肖有直接关联。"
+    },
+    {
+      "id": "721",
+      "name": "三透雕玛瑙饰",
+      "fullName": "【明】三透雕玛瑙饰",
+      "period": "明",
+      "image": "https://file.szmuseum.com/WaterMark/文章管理缩略图/20150616092636K2Waop.jpg",
+      "localImage": "museum_images/【明】三透雕玛瑙饰.jpg",
+      "zodiacs": [
+        "monkey"
+      ],
+      "zodiacNames": [
+        "猴"
+      ],
+      "confidence": 0.9,
+      "reasoning": "藏品中雕刻了一只猴子，符合生肖动物的直接描绘标准，因此与生肖猴有直接关联。"
+    },
+    {
+      "id": "800",
+      "name": "龙泉窑坐像人物水注",
+      "fullName": "【元】龙泉窑坐像人物水注",
+      "period": "元",
+      "image": "https://file.szmuseum.com/WaterMark/文章管理缩略图/20210206103829iqjdWP.jpg",
+      "localImage": "museum_images/【元】龙泉窑坐像人物水注.jpg",
+      "zodiacs": [
+        "dragon"
+      ],
+      "zodiacNames": [
+        "龙"
+      ],
+      "confidence": 0.9,
+      "reasoning": "藏品名称中提到'龙泉'，且龙是中国十二生肖之一，因此与生肖有直接关联。"
+    },
+    {
+      "id": "802",
+      "name": "虎皮三彩盘",
+      "fullName": "【清 康熙】虎皮三彩盘",
+      "period": "清 康熙",
+      "image": "https://file.szmuseum.com/WaterMark/文章管理缩略图/20210206163652gzqZMj.jpg",
+      "localImage": "museum_images/【清 康熙】虎皮三彩盘.jpg",
+      "zodiacs": [
+        "tiger"
+      ],
+      "zodiacNames": [
+        "虎"
+      ],
+      "confidence": 1.0,
+      "reasoning": "藏品名称明确提及‘虎’，且虎皮三彩盘的主题与虎的形象直接相关，符合生肖动物的定义。"
+    },
+    {
+      "id": "803",
+      "name": "青花五彩海水龙盘",
+      "fullName": "【清 康熙】青花五彩海水龙盘",
+      "period": "清 康熙",
+      "image": "https://file.szmuseum.com/WaterMark/文章管理缩略图/20210206161248auGPgy.jpg",
+      "localImage": "museum_images/【清 康熙】青花五彩海水龙盘.jpg",
+      "zodiacs": [
+        "dragon"
+      ],
+      "zodiacNames": [
+        "龙"
+      ],
+      "confidence": 1.0,
+      "reasoning": "藏品以海水云龙纹装饰，且内壁绘有五爪龙，直接描绘了生肖中的龙，符合与生肖的直接关联。"
+    },
+    {
+      "id": "812",
+      "name": "青花海水瑞兽纹盘",
+      "fullName": "【明 成化】青花海水瑞兽纹盘",
+      "period": "明 成化",
+      "image": "https://file.szmuseum.com/WaterMark/文章管理缩略图/20210205184841bzNUXk.jpg",
+      "localImage": "museum_images/【明 成化】青花海水瑞兽纹盘.jpg",
+      "zodiacs": [
+        "dragon"
+      ],
+      "zodiacNames": [
+        "龙"
+      ],
+      "confidence": 1.0,
+      "reasoning": "藏品内壁绘有一翼龙，龙是中国十二生肖之一，因此与生肖有直接关联。"
+    },
+    {
+      "id": "826",
+      "name": "白釉暗花海水云龙纹盘",
+      "fullName": "【明 正德】白釉暗花海水云龙纹盘",
+      "period": "明 正德",
+      "image": "https://file.szmuseum.com/WaterMark/文章管理缩略图/20210205185839CKjMss.jpg",
+      "localImage": "museum_images/【明 正德】白釉暗花海水云龙纹盘.jpg",
+      "zodiacs": [
+        "dragon"
+      ],
+      "zodiacNames": [
+        "龙"
+      ],
+      "confidence": 1.0,
+      "reasoning": "藏品内饰有一条腾升的龙，直接描绘了生肖中的龙，符合与生肖的直接关联标准。"
+    },
+    {
+      "id": "830",
+      "name": "米黄地五彩八骏图碗",
+      "fullName": "【清 康熙】米黄地五彩八骏图碗",
+      "period": "清 康熙",
+      "image": "https://file.szmuseum.com/WaterMark/文章管理缩略图/20210206161659EVmTnb.jpg",
+      "localImage": "museum_images/【清 康熙】米黄地五彩八骏图碗.jpg",
+      "zodiacs": [
+        "horse"
+      ],
+      "zodiacNames": [
+        "马"
+      ],
+      "confidence": 0.9,
+      "reasoning": "藏品主题为八骏图，直接描绘了马的形象，且马是中国十二生肖之一，因此与生肖有直接关联。"
+    },
+    {
+      "id": "836",
+      "name": "素白暗花螭虎龙暗款碗",
+      "fullName": "【明 弘治】素白暗花螭虎龙暗款碗",
+      "period": "明 弘治",
+      "image": "https://file.szmuseum.com/WaterMark/文章管理缩略图/20210205185041gnRdf4.jpg",
+      "localImage": "museum_images/【明 弘治】素白暗花螭虎龙暗款碗.jpg",
+      "zodiacs": [
+        "tiger",
+        "dragon"
+      ],
+      "zodiacNames": [
+        "虎",
+        "龙"
+      ],
+      "confidence": 0.9,
+      "reasoning": "藏品中描绘了螭虎和龙的形象，直接与生肖虎和龙相关联。"
+    },
+    {
+      "id": "843",
+      "name": "青花十棱菱花碗",
+      "fullName": "【明 永乐宣德】青花十棱菱花碗",
+      "period": "明 永乐宣德",
+      "image": "https://file.szmuseum.com/WaterMark/文章管理缩略图/20210205165656GmxUWt.jpg",
+      "localImage": "museum_images/【明 永乐宣德】青花十棱菱花碗.jpg",
+      "zodiacs": [
+        "dragon"
+      ],
+      "zodiacNames": [
+        "龙"
+      ],
+      "confidence": 0.9,
+      "reasoning": "藏品内外均绘有五趾团龙纹，龙是中国十二生肖之一，因此与生肖有直接关联。"
+    },
+    {
+      "id": "846",
+      "name": "龙泉窑大盘",
+      "fullName": "【明】龙泉窑大盘",
+      "period": "明",
+      "image": "https://file.szmuseum.com/WaterMark/文章管理缩略图/20210205201704K6ordB.jpg",
+      "localImage": "museum_images/【明】龙泉窑大盘.jpg",
+      "zodiacs": [
+        "dragon"
+      ],
+      "zodiacNames": [
+        "龙"
+      ],
+      "confidence": 0.9,
+      "reasoning": "藏品名称中提及'龙泉'，且龙是中国十二生肖之一，故与生肖有直接关联。"
+    },
+    {
+      "id": "848",
+      "name": "五彩薄胎鸡缸杯",
+      "fullName": "【清 康熙】五彩薄胎鸡缸杯",
+      "period": "清 康熙",
+      "image": "https://file.szmuseum.com/WaterMark/文章管理缩略图/20210206163207V59cZ6.jpg",
+      "localImage": "museum_images/【清 康熙】五彩薄胎鸡缸杯.jpg",
+      "zodiacs": [
+        "rooster"
+      ],
+      "zodiacNames": [
+        "鸡"
+      ],
+      "confidence": 1.0,
+      "reasoning": "藏品的外壁绘有雄鸡及雏鸡的图案，直接描绘了生肖动物鸡，因此与生肖有直接关联。"
+    },
+    {
+      "id": "851",
+      "name": "青花海水龙纹棒槌瓶",
+      "fullName": "【清 康熙】青花海水龙纹棒槌瓶",
+      "period": "清 康熙",
+      "image": "https://file.szmuseum.com/WaterMark/文章管理缩略图/202102061524202oFcrM.jpg",
+      "localImage": "museum_images/【清 康熙】青花海水龙纹棒槌瓶.jpg",
+      "zodiacs": [
+        "dragon"
+      ],
+      "zodiacNames": [
+        "龙"
+      ],
+      "confidence": 0.9,
+      "reasoning": "藏品的装饰主题为双龙抢珠，直接描绘了龙的形象，因此与生肖龙有直接关联。"
+    },
+    {
+      "id": "861",
+      "name": "定窑白釉印花盘",
+      "fullName": "【宋】定窑白釉印花盘",
+      "period": "宋",
+      "image": "https://file.szmuseum.com/WaterMark/文章管理缩略图/20210206102007cKzKuZ.jpg",
+      "localImage": "museum_images/【宋】定窑白釉印花盘.jpg",
+      "zodiacs": [
+        "dragon"
+      ],
+      "zodiacNames": [
+        "龙"
+      ],
+      "confidence": 0.9,
+      "reasoning": "藏品内壁印有龙纹，直接描绘了与生肖相关的龙，因此与生肖有直接关联。"
+    },
+    {
+      "id": "863",
+      "name": "龙泉窑暗花莱菔尊",
+      "fullName": "【明】龙泉窑暗花莱菔尊",
+      "period": "明",
+      "image": "https://file.szmuseum.com/WaterMark/文章管理缩略图/20210205201850GTzclW.jpg",
+      "localImage": "museum_images/【明】龙泉窑暗花莱菔尊.jpg",
+      "zodiacs": [
+        "dragon"
+      ],
+      "zodiacNames": [
+        "龙"
+      ],
+      "confidence": 0.8,
+      "reasoning": "藏品名称中的'龙泉'与生肖中的'龙'直接相关，且龙在中国文化中具有重要象征意义。"
+    },
+    {
+      "id": "868",
+      "name": "青花寿桃云龙纹碗",
+      "fullName": "【明 嘉靖】青花寿桃云龙纹碗",
+      "period": "明 嘉靖",
+      "image": "https://file.szmuseum.com/WaterMark/文章管理缩略图/20210205192802FYS82X.jpg",
+      "localImage": "museum_images/【明 嘉靖】青花寿桃云龙纹碗.jpg",
+      "zodiacs": [
+        "dragon"
+      ],
+      "zodiacNames": [
+        "龙"
+      ],
+      "confidence": 0.9,
+      "reasoning": "藏品中绘有五爪云龙纹，龙是中国十二生肖之一，因此与生肖有直接关联。"
+    },
+    {
+      "id": "869",
+      "name": "青花八仙大碗",
+      "fullName": "【明 万历】青花八仙大碗",
+      "period": "明 万历",
+      "image": "https://file.szmuseum.com/WaterMark/文章管理缩略图/20210222104735d8AncD.jpg",
+      "localImage": "museum_images/【明 万历】青花八仙大碗.jpg",
+      "zodiacs": [
+        "dragon"
+      ],
+      "zodiacNames": [
+        "龙"
+      ],
+      "confidence": 0.8,
+      "reasoning": "藏品内心绘有五趾团龙纹，直接描绘了与生肖相关的龙形象，符合生肖动物的直接关联标准。"
+    },
+    {
+      "id": "871",
+      "name": "龙泉窑暗花菱口碗",
+      "fullName": "【明】龙泉窑暗花菱口碗",
+      "period": "明",
+      "image": "https://file.szmuseum.com/WaterMark/文章管理缩略图/20210205201553RRFW13.jpg",
+      "localImage": "museum_images/【明】龙泉窑暗花菱口碗.jpg",
+      "zodiacs": [
+        "dragon"
+      ],
+      "zodiacNames": [
+        "龙"
+      ],
+      "confidence": 0.9,
+      "reasoning": "藏品名称中提到'龙泉'，与生肖中的'龙'直接相关，且龙在中国文化中具有重要象征意义。"
+    },
+    {
+      "id": "876",
+      "name": "龙泉窑褐斑盖罐",
+      "fullName": "【元】龙泉窑褐斑盖罐",
+      "period": "元",
+      "image": "https://file.szmuseum.com/WaterMark/文章管理缩略图/20210206103605xaup1s.jpg",
+      "localImage": "museum_images/【元】龙泉窑褐斑盖罐.jpg",
+      "zodiacs": [
+        "dragon"
+      ],
+      "zodiacNames": [
+        "龙"
+      ],
+      "confidence": 0.9,
+      "reasoning": "藏品名称中提及'龙'，与中国十二生肖中的龙直接相关。"
+    },
+    {
+      "id": "883",
+      "name": "青白瓷牧童骑牛件",
+      "fullName": "【明】青白瓷牧童骑牛件",
+      "period": "明",
+      "image": "https://file.szmuseum.com/WaterMark/文章管理缩略图/201510310625585EMlPh.png",
+      "localImage": "museum_images/【明】青白瓷牧童骑牛件.jpg",
+      "zodiacs": [
+        "ox"
+      ],
+      "zodiacNames": [
+        "牛"
+      ],
+      "confidence": 0.9,
+      "reasoning": "藏品名称中明确提及了牛，且雕刻了牧童骑牛的形象，直接与生肖牛相关。"
+    },
+    {
+      "id": "890",
+      "name": "三彩褐斑虎枕",
+      "fullName": "【明】三彩褐斑虎枕",
+      "period": "明",
+      "image": "https://file.szmuseum.com/WaterMark/文章管理缩略图/20210205201409ZOIW6h.jpg",
+      "localImage": "museum_images/【明】三彩褐斑虎枕.jpg",
+      "zodiacs": [
+        "tiger"
+      ],
+      "zodiacNames": [
+        "虎"
+      ],
+      "confidence": 1.0,
+      "reasoning": "藏品直接描绘了生肖动物老虎的形象，且名称中明确提及了老虎，因此与生肖虎有直接关联。"
+    },
+    {
+      "id": "891",
+      "name": "釉里红海水龙纹观音瓶",
+      "fullName": "【清 雍正】釉里红海水龙纹观音瓶",
+      "period": "清 雍正",
+      "image": "https://file.szmuseum.com/WaterMark/文章管理缩略图/20210206171216je6xOp.jpg",
+      "localImage": "museum_images/【清 雍正】釉里红海水龙纹观音瓶.jpg",
+      "zodiacs": [
+        "dragon"
+      ],
+      "zodiacNames": [
+        "龙"
+      ],
+      "confidence": 1.0,
+      "reasoning": "藏品主题以海水龙为核心装饰，直接描绘了生肖中的龙，符合与生肖相关的标准。"
+    },
+    {
+      "id": "894",
+      "name": "青花抢珠龙团福寿如意耳扁形葫芦瓶",
+      "fullName": "【清】青花抢珠龙团福寿如意耳扁形葫芦瓶",
+      "period": "清",
+      "image": "https://file.szmuseum.com/WaterMark/文章管理缩略图/20151031070431Ov1dj1.png",
+      "localImage": "museum_images/【清】青花抢珠龙团福寿如意耳扁形葫芦瓶.jpg",
+      "zodiacs": [
+        "dragon"
+      ],
+      "zodiacNames": [
+        "龙"
+      ],
+      "confidence": 0.9,
+      "reasoning": "藏品名称和描述中均提及了龙的形象，符合与生肖龙的直接关联。"
+    },
+    
+    {
+      "id": "908",
+      "name": "青花海水龙纹高足盘",
+      "fullName": "【清 乾隆】青花海水龙纹高足盘",
+      "period": "清 乾隆",
+      "image": "https://file.szmuseum.com/WaterMark/文章管理缩略图/20210222134638Zj8f76.jpg",
+      "localImage": "museum_images/【清 乾隆】青花海水龙纹高足盘.jpg",
+      "zodiacs": [
+        "dragon"
+      ],
+      "zodiacNames": [
+        "龙"
+      ],
+      "confidence": 0.9,
+      "reasoning": "藏品中描绘了海水鱼龙变化图，龙是中国十二生肖之一，因此与生肖有直接关联。"
+    },
+    {
+      "id": "910",
+      "name": "绿地描金花瓷瓶",
+      "fullName": "【清】绿地描金花瓷瓶",
+      "period": "清",
+      "image": "https://file.szmuseum.com/WaterMark/文章管理缩略图/201510310655222pdZfM.png",
+      "localImage": "museum_images/【清】绿地描金花瓷瓶.jpg",
+      "zodiacs": [
+        "tiger",
+        "dragon"
+      ],
+      "zodiacNames": [
+        "虎",
+        "龙"
+      ],
+      "confidence": 0.8,
+      "reasoning": "藏品描述中提到的凸螭虎和龙的形象直接与生肖虎和龙相关，因此可以认为与这两个生肖有直接关联。"
+    },
+    {
+      "id": "911",
+      "name": "酱釉双龙戏珠纹香炉",
+      "fullName": "【明 嘉靖】酱釉双龙戏珠纹香炉",
+      "period": "明 嘉靖",
+      "image": "https://file.szmuseum.com/WaterMark/文章管理缩略图/20210205194637Qtl0ki.jpg",
+      "localImage": "museum_images/【明 嘉靖】酱釉双龙戏珠纹香炉.jpg",
+      "zodiacs": [
+        "dragon"
+      ],
+      "zodiacNames": [
+        "龙"
+      ],
+      "confidence": 0.9,
+      "reasoning": "藏品的装饰主题为双龙戏珠，直接描绘了龙的形象，因此与生肖龙有直接关联。"
+    },
+    {
+      "id": "917",
+      "name": "青花海水云龙纹高足杯",
+      "fullName": "【明 万历】青花海水云龙纹高足杯",
+      "period": "明 万历",
+      "image": "https://file.szmuseum.com/WaterMark/文章管理缩略图/20210205195551zcrxzG.jpg",
+      "localImage": "museum_images/【明 万历】青花海水云龙纹高足杯.jpg",
+      "zodiacs": [
+        "dragon"
+      ],
+      "zodiacNames": [
+        "龙"
+      ],
+      "confidence": 1.0,
+      "reasoning": "藏品描绘了两条云龙，龙是中国十二生肖之一，因此与生肖有直接关联。"
+    },
+    
+    {
+      "id": "928",
+      "name": "青花五彩海水云龙纹盘",
+      "fullName": "【清 康熙】青花五彩海水云龙纹盘",
+      "period": "清 康熙",
+      "image": "https://file.szmuseum.com/WaterMark/文章管理缩略图/20151027105043VPSaAb.jpg",
+      "localImage": "museum_images/【清 康熙】青花五彩海水云龙纹盘.jpg",
+      "zodiacs": [
+        "dragon"
+      ],
+      "zodiacNames": [
+        "龙"
+      ],
+      "confidence": 1.0,
+      "reasoning": "藏品以龙为主要装饰元素，且龙是中国十二生肖之一，因此与生肖有直接关联。"
+    },
+    {
+      "id": "929",
+      "name": "青花海水白龙盘",
+      "fullName": "【明 宣德】青花海水白龙盘",
+      "period": "明 宣德",
+      "image": "https://file.szmuseum.com/WaterMark/文章管理缩略图/20210205182930PZFMuQ.jpg",
+      "localImage": "museum_images/【明 宣德】青花海水白龙盘.jpg",
+      "zodiacs": [
+        "dragon"
+      ],
+      "zodiacNames": [
+        "龙"
+      ],
+      "confidence": 1.0,
+      "reasoning": "藏品中心描绘了龙的形象，龙是中国十二生肖之一，因此与生肖有直接关联。"
+    },
+    {
+      "id": "932",
+      "name": "陈鸣远款紫砂方斗杯",
+      "fullName": "【清】陈鸣远款紫砂方斗杯",
+      "period": "清",
+      "image": "https://file.szmuseum.com/WaterMark/文章管理缩略图/20150612095601gklF3U.jpg",
+      "localImage": "museum_images/【清】陈鸣远款紫砂方斗杯.jpg",
+      "zodiacs": [
+        "goat",
+        "dragon"
+      ],
+      "zodiacNames": [
+        "羊",
+        "龙"
+      ],
+      "confidence": 0.8,
+      "reasoning": "藏品中有塑羊兽把手，直接与生肖羊相关；背面有螭龙，代表生肖龙。"
+    }
+  ],
+  "stats": {
+    "totalArtifacts": 863,
+    "totalZodiacArtifacts": 125,
+    "countByZodiac": {
+      "rat": 3,
+      "ox": 5,
+      "tiger": 23,
+      "rabbit": 5,
+      "dragon": 79,
+      "snake": 3,
+      "horse": 8,
+      "goat": 7,
+      "monkey": 3,
+      "rooster": 6,
+      "dog": 1,
+      "pig": 5
+    }
+  }
+}
